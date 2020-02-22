@@ -1,0 +1,49 @@
+/*
+  0 - 600px:      Phone
+  600 - 900px:    Tablet portrait
+  900 - 1200px:   Tablet landscape
+  [1200 - 1800] is where our normal styles apply
+  1800px + :      Big desktop
+  
+  $breakpoint argument choices:
+  - phone
+  - tab-port (tablet portrait)
+  - tab-land (tablet landscape)
+  - big-desktop
+  
+  ORDER: Base + typography > general layout + grid > page layout > components
+  */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* this makes every element to inherit the border-box sizing declared in the body, because the box-sizing property
+  is not inherited by default */
+  box-sizing: inherit; }
+
+html {
+  /* so 1 rem means 10px from now on */
+  /* calculated into %, so when the user changes their browser's default font-size (which is by default 16px),
+    this allows them to resize it also. 10px is 62.5% of 16px. */
+  font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media only screen and (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+::selection {
+  background-color: #de6c74;
+  color: #fff; }

@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* this makes every element to inherit the border-box sizing declared in the body, because the box-sizing property
+  is not inherited by default */
+  box-sizing: inherit;
+}
+
+html {
+  /* so 1 rem means 10px from now on */
+  /* calculated into %, so when the user changes their browser's default font-size (which is by default 16px),
+    this allows them to resize it also. 10px is 62.5% of 16px. */
+  font-size: 62.5%;
+
+  // Order matters!
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 56.25%; //1 rem = 9px, 9/16 = 56.25%
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 50%; //1 rem = 8px, 8/16 = 50%
+  }
+
+  @include respond(big-desktop) {
+    // width > 1800?
+    font-size: 75%; // 1rem = 12px, 12/16 = 75%
+  }
+}
+
+body {
+  box-sizing: border-box;
+  padding: 3rem;
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
+}
+
+::selection {
+  background-color: $color-pink;
+  color: $color-white;
+}

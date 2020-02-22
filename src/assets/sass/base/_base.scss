@@ -1,11 +1,18 @@
+@-ms-viewport {
+  width: device-width;
+}
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
   /* this makes every element to inherit the border-box sizing declared in the body, because the box-sizing property
   is not inherited by default */
   box-sizing: inherit;
+  vertical-align: baseline;
 }
 
 html {
@@ -13,6 +20,9 @@ html {
   /* calculated into %, so when the user changes their browser's default font-size (which is by default 16px),
     this allows them to resize it also. 10px is 62.5% of 16px. */
   font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 
   // Order matters!
   @include respond(tab-land) {
@@ -32,8 +42,30 @@ html {
 }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -ms-overflow-style: scrollbar;
+  width: 100%;
+  height: 100%;
+  min-height: 30rem;
+  overflow: hidden;
+
+  &::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    background-color: #faececab;
+    background-repeat: repeat, repeat-x;
+    background-size: 128px 128px, cover;
+  }
 
   @include respond(tab-port) {
     padding: 0;

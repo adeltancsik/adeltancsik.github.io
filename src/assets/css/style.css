@@ -13,20 +13,29 @@
   
   ORDER: Base + typography > general layout + grid > page layout > components
   */
+@-ms-viewport {
+  width: device-width; }
+
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
+  border: 0;
+  font-size: 100%;
   /* this makes every element to inherit the border-box sizing declared in the body, because the box-sizing property
   is not inherited by default */
-  box-sizing: inherit; }
+  box-sizing: inherit;
+  vertical-align: baseline; }
 
 html {
   /* so 1 rem means 10px from now on */
   /* calculated into %, so when the user changes their browser's default font-size (which is by default 16px),
     this allows them to resize it also. 10px is 62.5% of 16px. */
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -38,8 +47,28 @@ html {
       font-size: 75%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 3rem; }
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  -ms-overflow-style: scrollbar;
+  width: 100%;
+  height: 100%;
+  min-height: 30rem;
+  overflow: hidden; }
+  body::after {
+    pointer-events: none;
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-attachment: fixed;
+    background-color: #faececab;
+    background-repeat: repeat, repeat-x;
+    background-size: 128px 128px, cover; }
   @media only screen and (max-width: 56.25em) {
     body {
       padding: 0; } }

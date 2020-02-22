@@ -6,7 +6,7 @@ import Intro from "./components/Intro";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div id="app">
         <Route path="/" exact component={Intro} />
       </div>
     );

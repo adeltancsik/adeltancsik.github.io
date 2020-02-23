@@ -1,11 +1,22 @@
-#app {
+#root {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-grow: 1;
   flex-shrink: 1;
   height: 100%;
-  padding: 5rem;
+  padding: 8rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: row;
+  transition: opacity 1s ease-in-out, transform 0.75s ease-in-out;
+  transition-delay: 0.25s;
+  cursor: default;
+  position: relative;
+  height: 53rem;
+  box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
 }
 
 // @media screen and (orientation: portrait) {

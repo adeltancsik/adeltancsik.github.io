@@ -19,6 +19,7 @@ class App extends Component {
     return (
       <div id="app">
         <Route path="/" exact component={Intro} />
+        <div className="lds-dual-ring" id="spinner"></div>
       </div>
     );
   }

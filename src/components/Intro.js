@@ -4,7 +4,9 @@ export default class Intro extends Component {
   render() {
     return (
       <section id="intro" className="panel">
-        <h1>IMAGE</h1>
+        <div className="span-2-5">
+          <h1>IMAGE</h1>
+        </div>
       </section>
     );
   }

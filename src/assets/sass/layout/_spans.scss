@@ -1,0 +1,23 @@
+.span {
+  &-2 {
+    width: 20rem;
+    &-5 {
+      width: 25rem;
+    }
+  }
+  &-3 {
+    width: 30rem;
+  }
+  &-4 {
+    width: 40rem;
+  }
+  &-5 {
+    width: 50rem;
+    &-5 {
+      width: 55rem;
+    }
+  }
+  &-6 {
+    width: 60rem;
+  }
+}

@@ -12,6 +12,23 @@
     position: relative;
     min-width: 10rem;
   }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+  }
+
+  &.left {
+    flex-direction: row;
+  }
+
+  &.right {
+    flex-direction: row-reverse;
+  }
 }
 
 .panel.spotlight {

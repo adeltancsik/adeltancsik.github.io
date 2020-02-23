@@ -59,8 +59,7 @@ body {
   -ms-overflow-style: scrollbar;
   width: 100%;
   height: 100%;
-  min-height: 35rem;
-  overflow: hidden; }
+  min-height: 35rem; }
   body::after {
     pointer-events: none;
     content: "";
@@ -82,6 +81,9 @@ body {
 ::selection {
   background-color: #de6c74;
   color: #fff; }
+
+#first {
+  background-color: #00c9d0; }
 
 #intro {
   background-color: #de6c74; }
@@ -132,6 +134,25 @@ body {
     animation: lds-dual-ring 1.4s linear infinite;
     opacity: 0.3; }
 
+.span-2 {
+  width: 20rem; }
+  .span-2-5 {
+    width: 25rem; }
+
+.span-3 {
+  width: 30rem; }
+
+.span-4 {
+  width: 40rem; }
+
+.span-5 {
+  width: 50rem; }
+  .span-5-5 {
+    width: 55rem; }
+
+.span-6 {
+  width: 60rem; }
+
 .panel {
   display: flex;
   flex-grow: 0;
@@ -144,6 +165,17 @@ body {
   .panel > * {
     position: relative;
     min-width: 10rem; }
+  .panel .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3.5rem;
+    flex-grow: 0;
+    flex-shrink: 0; }
+  .panel.left {
+    flex-direction: row; }
+  .panel.right {
+    flex-direction: row-reverse; }
 
 .panel.spotlight {
   align-items: stretch;

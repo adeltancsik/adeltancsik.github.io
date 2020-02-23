@@ -4,6 +4,7 @@ import { Route } from "react-router-dom";
 import Intro from "./components/Intro";
 import First from "./components/First";
 import Second from "./components/Second";
+import Third from "./components/Third";
 import $ from "jquery";
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
         <Route path="/" exact component={Intro} />
         <Route path="/" exact component={First} />
         <Route path="/" exact component={Second} />
+        <Route path="/" exact component={Third} />
         <div className="lds-dual-ring" id="spinner"></div>
       </div>
     );

@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300i,400i");
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
 @import "base/animations";
 @import "base/base";
+@import "base/typography";
 
 @import "components/first";
 @import "components/intro";
 @import "components/second";
+@import "components/third";
 
 @import "layout/app";
 @import "layout/spans";

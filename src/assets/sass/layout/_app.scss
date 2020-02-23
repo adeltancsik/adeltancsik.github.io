@@ -8,34 +8,34 @@
   padding: 5rem;
 }
 
-@media screen and (orientation: portrait) {
-  #app {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
+// @media screen and (orientation: portrait) {
+//   #app {
+//     padding-left: 2rem;
+//     padding-right: 2rem;
+//   }
+// }
 
-@media screen and (min-aspect-ratio: 16 / 7) {
-  #app {
-    padding: 6vh;
-  }
-}
+// @media screen and (min-aspect-ratio: 16 / 7) {
+//   #app {
+//     padding: 6vh;
+//   }
+// }
 
-@media screen and (min-aspect-ratio: 16 / 6) {
-  #app {
-    padding: 0;
-  }
-}
+// @media screen and (min-aspect-ratio: 16 / 6) {
+//   #app {
+//     padding: 0;
+//   }
+// }
 
-@media screen and (max-width: 736px) {
-  #app {
-    height: auto;
-    padding: 1rem;
-  }
-}
+// @media screen and (max-width: 736px) {
+//   #app {
+//     height: auto;
+//     padding: 1rem;
+//   }
+// }
 
-@media screen and (max-width: 480px) {
-  #app {
-    padding: 0;
-  }
-}
+// @media screen and (max-width: 480px) {
+//   #app {
+//     padding: 0;
+//   }
+// }

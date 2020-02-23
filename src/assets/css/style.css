@@ -13,6 +13,12 @@
   
   ORDER: Base + typography > general layout + grid > page layout > components
   */
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
 @-ms-viewport {
   width: device-width; }
 
@@ -76,3 +82,34 @@ body {
 ::selection {
   background-color: #de6c74;
   color: #fff; }
+
+#intro {
+  background-color: #de6c74; }
+
+.lds-dual-ring {
+  display: inline-block;
+  width: 8rem;
+  height: 8rem; }
+  .lds-dual-ring::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5rem;
+    height: 5rem;
+    margin: -2rem 0 0 -2rem;
+    border-radius: 50%;
+    border: 6px solid #2e2b37;
+    border-color: #2e2b37 transparent #2e2b37 transparent;
+    animation: lds-dual-ring 1.4s linear infinite;
+    opacity: 0.3; }
+
+#app {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-grow: 1;
+  flex-shrink: 1;
+  height: 100%;
+  padding: 5rem; }

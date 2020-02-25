@@ -5,7 +5,7 @@ export default class Third extends Component {
     return (
       <section id="third" className="panel">
         <div className="content span-4-5">
-          <h1 class="major">
+          <h1 className="major">
             Projects
             {/* <i class="fas fa-code"></i> */}
           </h1>

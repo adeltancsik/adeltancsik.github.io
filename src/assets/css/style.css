@@ -230,6 +230,87 @@ blockquote {
     animation: moveInLeft 1.5s ease-out 0.5s;
     animation-fill-mode: backwards; }
 
+#fourth {
+  background-color: #871d2f;
+  box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
+  color: #fff; }
+  #fourth .content {
+    padding: 2rem 2rem;
+    justify-content: start; }
+  #fourth a {
+    border-bottom: none; }
+
+.fourth__list {
+  column-count: 2;
+  column-rule: 1px solid rgba(255, 255, 255, 0.75);
+  hyphens: auto;
+  padding: 0;
+  margin: 0; }
+
+.fourth__item {
+  margin: 0 2rem; }
+
+.fourth__pic {
+  width: 100%; }
+
+.btn {
+  /* active is when we click on the element */
+  /* after is a pseudo element placed after another element */ }
+  .btn, .btn:link, .btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    /* first: top&bottom, second: right&left; with 4: top right bottom left */
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    /* all the properties are enabled to be animated */
+    transition: all 0.3s;
+    position: relative;
+    font-size: 1.4rem;
+    width: fit-content;
+    align-self: center;
+    border-bottom: dotted 1px;
+    cursor: pointer; }
+  .btn:hover {
+    /* negative means up on the Y axis */
+    transform: translateY(-3px);
+    /* x direction, y direction blur */
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.2);
+    color: inherit; }
+  .btn:active, .btn:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+  .btn--white {
+    background-color: #871d2f;
+    color: rgba(255, 255, 255, 0.75); }
+    .btn--white::after {
+      background-color: #871d2f; }
+  .btn::after {
+    /* we have to specify the content and display properties in order to work */
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    /* measured to the first relative parent it can find */
+    position: absolute;
+    /* we want it right behind the button */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    /* put the transition property on the initial element */
+    transition: all 0.4s; }
+
+.remove-style {
+  color: inherit;
+  background-color: inherit;
+  font-family: inherit;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  border: none; }
+
 #intro {
   box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
   animation: moveInLeft_section 1.5s ease-out 0.5s;
@@ -307,6 +388,47 @@ blockquote {
   box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
   z-index: 2;
   color: #fff; }
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3000;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s; }
+  @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
+    .popup {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      background-color: rgba(0, 0, 0, 0.3); } }
+  .popup__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 75%;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 1px solid rgba(255, 255, 255, 0.75);
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid rgba(255, 255, 255, 0.75);
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto; }
 
 #root {
   display: flex;

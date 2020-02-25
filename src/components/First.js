@@ -4,8 +4,8 @@ export default class First extends Component {
   render() {
     return (
       <section id="first" className="panel">
-        <div class="content span-5-5">
-          <h1 class="major title">
+        <div className="content span-5-5">
+          <h1 className="major title">
             Hello, my name is
             <span>
               <h1 className="name title">Adél Tancsik</h1>

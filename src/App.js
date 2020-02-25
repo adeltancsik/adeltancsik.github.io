@@ -6,6 +6,7 @@ import First from "./components/First";
 import Second from "./components/Second";
 import Third from "./components/Third";
 import FadeInSection from "./components/FadeInSection";
+import Fourth from "./components/Fourth";
 import $ from "jquery";
 
 class App extends Component {
@@ -29,16 +30,7 @@ class App extends Component {
           <Route path="/" exact component={Third} />
         </FadeInSection>
         <FadeInSection>
-          <Route path="/" exact component={Third} />
-        </FadeInSection>
-        <FadeInSection>
-          <Route path="/" exact component={Third} />
-        </FadeInSection>
-        <FadeInSection>
-          <Route path="/" exact component={Third} />
-        </FadeInSection>
-        <FadeInSection>
-          <Route path="/" exact component={Third} />
+          <Route path="/" exact component={Fourth} />
         </FadeInSection>
         <div className="lds-dual-ring" id="spinner"></div>
       </div>

@@ -7,7 +7,7 @@ export default class Second extends Component {
       <section id="second" className="panel spotlight right">
         <div className="content right span-7-5">
           <div className="medium">
-            <h1 class="major">About me</h1>
+            <h1 className="major">About me</h1>
             <blockquote>
               “Change is inevitable. Growth is optional.”
               <br />
@@ -30,7 +30,7 @@ export default class Second extends Component {
             </p>
           </div>
         </div>
-        <div class="image filtered tinted">
+        <div className="image filtered tinted">
           <img src={pic2} alt="Adel" id="adel-pic" />
         </div>
       </section>

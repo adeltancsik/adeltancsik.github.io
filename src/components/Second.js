@@ -5,7 +5,7 @@ export default class Second extends Component {
   render() {
     return (
       <section id="second" className="panel spotlight right">
-        <div className="content right span-7">
+        <div className="content right span-7-5">
           <div className="medium">
             <h1 class="major">About me</h1>
             <blockquote>
@@ -13,7 +13,7 @@ export default class Second extends Component {
               <br />
               <span>— John Maxwell</span>
             </blockquote>
-            <p>
+            <p className="justifying">
               This quote describes my beliefs since I decided to change career
               from a Physiotherapist to a Web Developer.
               <br />
@@ -30,8 +30,8 @@ export default class Second extends Component {
             </p>
           </div>
         </div>
-        <div class="image">
-          <img src={pic2} alt="Photo of me 2." />
+        <div class="image filtered tinted">
+          <img src={pic2} alt="Adel" id="adel-pic" />
         </div>
       </section>
     );

@@ -1,3 +1,19 @@
 #first {
   background-image: linear-gradient(45deg, whitesmoke, $color-pink);
+  z-index: 1;
+  box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
+
+  .title {
+    font-size: 4rem;
+    line-height: 1.5;
+  }
+
+  .name {
+    color: #00c9d0;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.452));
+    -webkit-text-stroke: 0.5px rgba(133, 127, 127, 0.562);
+    font-size: 4.5rem;
+    animation: moveInLeft 1.5s ease-out 0.5s;
+    animation-fill-mode: backwards;
+  }
 }

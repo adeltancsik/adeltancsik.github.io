@@ -60,3 +60,33 @@
     }
   }
 }
+
+@mixin gradient-background(
+  $tint: false,
+  $opacity: 0.25,
+  $stop1: 30%,
+  $stop2: 55%,
+  $angle: 55deg
+) {
+  $background-image: (
+    url("../images/overlay.png"),
+    linear-gradient(
+      $angle,
+      transparentize(#f5f4f8, (1 - $opacity)) $stop1,
+      transparentize($color-pink, (1 - $opacity)) $stop2,
+      transparentize($color-blue-light, (1 - $opacity))
+    )
+  );
+
+  $background-size: (128px 128px, auto);
+
+  @if ($tint) {
+    $x: linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
+    $y: auto;
+    $background-image: append($background-image, $x);
+    $background-size: append($background-size, $y);
+  }
+
+  background-image: $background-image;
+  background-size: $background-size;
+}

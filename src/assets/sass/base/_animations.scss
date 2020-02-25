@@ -7,3 +7,25 @@
     transform: rotate(360deg);
   }
 }
+
+/* becomes visible and comes in from the right */
+@keyframes moveInLeft {
+  /* before the animation starts */
+  0% {
+    opacity: 0;
+    /* moved on the X axis, so horizontally, negative means more to the left */
+    transform: translateX(50rem);
+  }
+
+  80% {
+    /* goes a bit to the right -> bouncing back look */
+    transform: translateX(1rem);
+  }
+
+  /* when the animation is finished */
+  100% {
+    opacity: 1;
+    /* the way it looks now (already declared) */
+    transform: translate(0);
+  }
+}

@@ -21,39 +21,66 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: $color-white;
+    background-color: $color-wencel;
     width: 75%;
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
     border-radius: 3px;
-    display: table;
     overflow: hidden;
-    transform: translate(-50%, -50%) scale(0.25);
+    text-align: center;
+    // transform: translate(-50%, -50%) scale(0.25);
     // also delays the scaling by .2s, so first the background darkens, then the content appears
-    transition: all 0.5s 0.2s;
+
+    h1 {
+      display: inline-block;
+      margin-top: 2rem;
+    }
+
+    button {
+      margin: 0.5rem;
+      position: absolute;
+      top: 0.3rem;
+      right: 0.3rem;
+    }
+
+    a {
+      border-bottom: none;
+
+      i {
+        transform: translateY(0.3rem) scale(1.5);
+
+        &:hover {
+          transform: translateY(0) scale(1.7);
+        }
+      }
+    }
   }
 
-  // &__img {
-  //   display: block;
-  //   width: 100%;
+  &__pic {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 
-  //   @include respond(tab-port) {
-  //     display: inline;
-  //     max-width: 49.5%;
-  //     margin-top: -1rem;
-  //   }
-  // }
+    &--container {
+      width: 60%;
+      height: 100%;
+      float: left;
+      margin-right: 2rem;
+    }
+
+    // @include respond(tab-port) {
+    //   display: inline;
+    //   max-width: 49.5%;
+    //   margin-top: -1rem;
+    // }
+  }
 
   &__text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
+    // position: relative;
+    // top: 0;
+    // left: 5rem;
 
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid $color-text;
-
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid $color-text;
+    font-size: 1.7rem;
+    margin: 2rem 3rem;
 
     -moz-hyphens: auto;
     -ms-hyphens: auto;

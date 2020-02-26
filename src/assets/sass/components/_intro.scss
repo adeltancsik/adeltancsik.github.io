@@ -7,7 +7,7 @@
 
 #intro {
   box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
-  animation: moveInLeft_section 1.5s ease-out 0.5s;
+  animation: moveInLeft_section 2s ease-out 0.5s;
   animation-fill-mode: backwards;
   z-index: 0;
 }
@@ -29,11 +29,6 @@
     /* moved on the X axis, so horizontally, negative means more to the left */
     transform: translateX(50rem);
     box-shadow: none;
-  }
-
-  80% {
-    /* goes a bit to the right -> bouncing back look */
-    transform: translateX(1rem);
   }
 
   /* when the animation is finished */

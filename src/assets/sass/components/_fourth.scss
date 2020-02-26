@@ -2,11 +2,18 @@
   background-color: $color-wencel;
   box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
   //   z-index: 2;
-  color: $color-white;
+  color: $color-text;
+  z-index: 10;
 
   .content {
     padding: 2rem 2rem;
     justify-content: start;
+    z-index: 10;
+
+    h2 {
+      margin-top: 1.5rem;
+      color: $color-text;
+    }
   }
 
   a {
@@ -15,9 +22,11 @@
 }
 
 .fourth {
+  z-index: 10;
+
   &__list {
     column-count: 2;
-    column-rule: 1px solid $color-text;
+    column-rule: 1px dotted $color-text-light;
     hyphens: auto;
     padding: 0;
     margin: 0;
@@ -29,6 +38,32 @@
 
   &__pic {
     width: 100%;
+  }
+
+  &__icon {
+    // we can use font attributes on the icon, because the icon font is text
+    font-size: 2rem;
+    margin: 0.5rem;
+    display: inline-block;
+    color: $color-text;
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    transform: translateY(0.3rem);
+
+    &:hover {
+      transform: translateY(0) scale(1.2);
+      color: $color-blue-light;
+    }
+  }
+
+  &__info {
+    display: inline-block;
+    width: 5rem;
+    z-index: 4;
+    position: absolute;
+    right: 12rem;
+    bottom: 4rem;
+    // transform: translate(300%, -45%);
   }
 }
 
@@ -51,6 +86,8 @@
     font-size: 1.4rem;
     width: fit-content;
     align-self: center;
+    z-index: 4;
+    color: $color-text;
 
     //Change for the <button> element
     // border: none;

@@ -7,7 +7,9 @@ import Second from "./components/Second";
 import Third from "./components/Third";
 import FadeInSection from "./components/FadeInSection";
 import Fourth from "./components/Fourth";
+import Popup1 from "./components/Popup1";
 import $ from "jquery";
+import { CSSTransition } from "react-transition-group";
 
 class App extends Component {
   componentDidMount() {
@@ -20,20 +22,51 @@ class App extends Component {
       });
     });
   }
+
+  state = { visible1: false };
+
+  onVisible1 = event => {
+    event.preventDefault();
+    !this.state.visible1
+      ? this.setState({ visible1: true })
+      : this.setState({ visible1: false });
+  };
+
   render() {
     return (
-      <div id="app">
-        <Route path="/" exact component={Intro} />
-        <Route path="/" exact component={First} />
-        <Route path="/" exact component={Second} />
-        <FadeInSection>
-          <Route path="/" exact component={Third} />
-        </FadeInSection>
-        <FadeInSection>
-          <Route path="/" exact component={Fourth} />
-        </FadeInSection>
-        <div className="lds-dual-ring" id="spinner"></div>
-      </div>
+      <CSSTransition in={true} appear={true} timeout={2000} classNames="fade">
+        <div id="app">
+          <Route path="/" exact component={Intro} />
+          <Route path="/" exact component={First} />
+          <Route path="/" exact component={Second} />
+          <FadeInSection>
+            <Route path="/" exact component={Third} />
+          </FadeInSection>
+          <FadeInSection>
+            <Route
+              path="/"
+              render={props => (
+                <Fourth {...props} onVisible={this.onVisible1} />
+              )}
+            />
+          </FadeInSection>
+          {this.state.visible1 ? (
+            <Route
+              path="/"
+              render={props => (
+                <Popup1
+                  {...props}
+                  onVisible={this.onVisible1}
+                  visible1={this.state.visible1}
+                />
+              )}
+            />
+          ) : (
+            ""
+          )}
+          <div className="lds-dual-ring" id="spinner"></div>
+        </div>
+      </CSSTransition>
     );
   }
 }

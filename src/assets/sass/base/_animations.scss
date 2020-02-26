@@ -17,11 +17,6 @@
     transform: translateX(50rem);
   }
 
-  80% {
-    /* goes a bit to the right -> bouncing back look */
-    transform: translateX(1rem);
-  }
-
   /* when the animation is finished */
   100% {
     opacity: 1;

@@ -27,9 +27,6 @@
     opacity: 0;
     /* moved on the X axis, so horizontally, negative means more to the left */
     transform: translateX(50rem); }
-  80% {
-    /* goes a bit to the right -> bouncing back look */
-    transform: translateX(1rem); }
   /* when the animation is finished */
   100% {
     opacity: 1;
@@ -227,31 +224,54 @@ blockquote {
     filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.452));
     -webkit-text-stroke: 0.5px rgba(133, 127, 127, 0.562);
     font-size: 4.5rem;
-    animation: moveInLeft 1.5s ease-out 0.5s;
+    animation: moveInLeft 2s ease-out 0.5s;
     animation-fill-mode: backwards; }
 
 #fourth {
   background-color: #871d2f;
   box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
-  color: #fff; }
+  color: rgba(255, 255, 255, 0.75);
+  z-index: 10; }
   #fourth .content {
     padding: 2rem 2rem;
-    justify-content: start; }
+    justify-content: start;
+    z-index: 10; }
+    #fourth .content h2 {
+      margin-top: 1.5rem;
+      color: rgba(255, 255, 255, 0.75); }
   #fourth a {
     border-bottom: none; }
 
-.fourth__list {
-  column-count: 2;
-  column-rule: 1px solid rgba(255, 255, 255, 0.75);
-  hyphens: auto;
-  padding: 0;
-  margin: 0; }
-
-.fourth__item {
-  margin: 0 2rem; }
-
-.fourth__pic {
-  width: 100%; }
+.fourth {
+  z-index: 10; }
+  .fourth__list {
+    column-count: 2;
+    column-rule: 1px dotted rgba(255, 255, 255, 0.4);
+    hyphens: auto;
+    padding: 0;
+    margin: 0; }
+  .fourth__item {
+    margin: 0 2rem; }
+  .fourth__pic {
+    width: 100%; }
+  .fourth__icon {
+    font-size: 2rem;
+    margin: 0.5rem;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.75);
+    transition: all 0.5s ease;
+    backface-visibility: hidden;
+    transform: translateY(0.3rem); }
+    .fourth__icon:hover {
+      transform: translateY(0) scale(1.2);
+      color: #00c9d0; }
+  .fourth__info {
+    display: inline-block;
+    width: 5rem;
+    z-index: 4;
+    position: absolute;
+    right: 12rem;
+    bottom: 4rem; }
 
 .btn {
   /* active is when we click on the element */
@@ -270,6 +290,8 @@ blockquote {
     font-size: 1.4rem;
     width: fit-content;
     align-self: center;
+    z-index: 4;
+    color: rgba(255, 255, 255, 0.75);
     border-bottom: dotted 1px;
     cursor: pointer; }
   .btn:hover {
@@ -313,7 +335,7 @@ blockquote {
 
 #intro {
   box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
-  animation: moveInLeft_section 1.5s ease-out 0.5s;
+  animation: moveInLeft_section 2s ease-out 0.5s;
   animation-fill-mode: backwards;
   z-index: 0; }
 
@@ -331,9 +353,6 @@ blockquote {
     /* moved on the X axis, so horizontally, negative means more to the left */
     transform: translateX(50rem);
     box-shadow: none; }
-  80% {
-    /* goes a bit to the right -> bouncing back look */
-    transform: translateX(1rem); }
   /* when the animation is finished */
   100% {
     opacity: 1;
@@ -408,23 +427,38 @@ blockquote {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: #871d2f;
     width: 75%;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
-    display: table;
     overflow: hidden;
-    transform: translate(-50%, -50%) scale(0.25);
-    transition: all 0.5s 0.2s; }
+    text-align: center; }
+    .popup__content h1 {
+      display: inline-block;
+      margin-top: 2rem; }
+    .popup__content button {
+      margin: 0.5rem;
+      position: absolute;
+      top: 0.3rem;
+      right: 0.3rem; }
+    .popup__content a {
+      border-bottom: none; }
+      .popup__content a i {
+        transform: translateY(0.3rem) scale(1.5); }
+        .popup__content a i:hover {
+          transform: translateY(0) scale(1.7); }
+  .popup__pic {
+    display: inline-block;
+    width: 100%;
+    height: 100%; }
+    .popup__pic--container {
+      width: 60%;
+      height: 100%;
+      float: left;
+      margin-right: 2rem; }
   .popup__text {
-    font-size: 1.4rem;
-    margin-bottom: 4rem;
-    -moz-column-count: 2;
-    -moz-column-gap: 4rem;
-    -moz-column-rule: 1px solid rgba(255, 255, 255, 0.75);
-    column-count: 2;
-    column-gap: 4rem;
-    column-rule: 1px solid rgba(255, 255, 255, 0.75);
+    font-size: 1.7rem;
+    margin: 2rem 3rem;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
@@ -486,6 +520,44 @@ blockquote {
   opacity: 1;
   transform: none;
   visibility: visible; }
+
+/* ---Animation--- */
+/* appear - on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1; }
+
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms linear; }
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(0.2); }
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); }
+
+.fade-enter-done {
+  opacity: 1;
+  transition: all 5000ms ease-in; }
+
+/* exit */
+.fade-exit {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1); }
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2); }
+
+.fade-exit-done {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: all 5000ms ease-in; }
 
 .span-2 {
   width: 20rem; }

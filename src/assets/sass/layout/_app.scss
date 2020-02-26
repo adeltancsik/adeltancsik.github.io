@@ -64,6 +64,52 @@
   visibility: visible;
 }
 
+/* ---Animation--- */
+/* appear - on page load */
+.fade-appear {
+  opacity: 0;
+  z-index: 1;
+}
+
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms linear;
+}
+
+/* enter */
+.fade-enter {
+  opacity: 0;
+  z-index: 1;
+  transform: translate(-50%, -50%) scale(0.2);
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.fade-enter-done {
+  opacity: 1;
+  transition: all 5000ms ease-in;
+}
+
+/* exit */
+.fade-exit {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+}
+
+.fade-exit-done {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.2);
+  transition: all 5000ms ease-in;
+}
+
 // @media screen and (orientation: portrait) {
 //   #app {
 //     padding-left: 2rem;

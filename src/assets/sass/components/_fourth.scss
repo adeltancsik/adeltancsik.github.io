@@ -1,5 +1,6 @@
 #fourth {
-  background-color: $color-wencel;
+  // background-color: $color-wencel;
+  background-image: linear-gradient(45deg, $color-pink, $color-wencel);
   box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
   //   z-index: 2;
   color: $color-text;
@@ -48,10 +49,9 @@
     color: $color-text;
     transition: all 0.5s ease;
     backface-visibility: hidden;
-    transform: translateY(0.3rem);
 
     &:hover {
-      transform: translateY(0) scale(1.2);
+      transform: scale(1.2);
       color: $color-blue-light;
     }
   }
@@ -112,11 +112,11 @@
   }
 
   &--white {
-    background-color: $color-wencel;
+    background-color: transparent;
     color: $color-text;
 
     &::after {
-      background-color: $color-wencel;
+      background-color: transparent;
     }
   }
 
@@ -152,4 +152,8 @@
   font-size: 1.4rem;
   text-transform: uppercase;
   border: none;
+}
+
+#project_title {
+  margin-bottom: 3rem;
 }

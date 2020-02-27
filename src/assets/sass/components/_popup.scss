@@ -46,10 +46,11 @@
       border-bottom: none;
 
       i {
-        transform: translateY(0.3rem) scale(1.5);
+        transform: scale(1.5);
+        margin: 2rem;
 
         &:hover {
-          transform: translateY(0) scale(1.7);
+          transform: scale(1.7);
         }
       }
     }

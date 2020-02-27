@@ -7,9 +7,13 @@ import Second from "./components/Second";
 import Third from "./components/Third";
 import FadeInSection from "./components/FadeInSection";
 import Fourth from "./components/Fourth";
-import Popup1 from "./components/Popup1";
+import Popup5 from "./components/Popup5";
 import $ from "jquery";
 import { CSSTransition } from "react-transition-group";
+import Popup4 from "./components/Popup4";
+import Popup3 from "./components/Popup3";
+import Popup2 from "./components/Popup2";
+import Popup1 from "./components/Popup1";
 
 class App extends Component {
   componentDidMount() {
@@ -23,13 +27,43 @@ class App extends Component {
     });
   }
 
-  state = { visible1: false };
+  state = {
+    visible5: false,
+    visible4: false,
+    visible3: false,
+    visible2: false,
+    visible1: false
+  };
 
-  onVisible1 = event => {
+  onVisible = (event, num) => {
     event.preventDefault();
-    !this.state.visible1
-      ? this.setState({ visible1: true })
-      : this.setState({ visible1: false });
+    switch (num) {
+      case 5:
+        !this.state.visible5
+          ? this.setState({ visible5: true })
+          : this.setState({ visible5: false });
+        break;
+      case 4:
+        !this.state.visible4
+          ? this.setState({ visible4: true })
+          : this.setState({ visible4: false });
+        break;
+      case 3:
+        !this.state.visible3
+          ? this.setState({ visible3: true })
+          : this.setState({ visible3: false });
+        break;
+      case 2:
+        !this.state.visible2
+          ? this.setState({ visible2: true })
+          : this.setState({ visible2: false });
+        break;
+      case 1:
+        !this.state.visible1
+          ? this.setState({ visible1: true })
+          : this.setState({ visible1: false });
+        break;
+    }
   };
 
   render() {
@@ -45,19 +79,73 @@ class App extends Component {
           <FadeInSection>
             <Route
               path="/"
-              render={props => (
-                <Fourth {...props} onVisible={this.onVisible1} />
-              )}
+              render={props => <Fourth {...props} onVisible={this.onVisible} />}
             />
           </FadeInSection>
+          {this.state.visible5 ? (
+            <Route
+              path="/"
+              render={props => (
+                <Popup5
+                  {...props}
+                  onVisible={this.onVisible}
+                  visible5={this.state.visible5}
+                />
+              )}
+            />
+          ) : (
+            ""
+          )}
+          {this.state.visible4 ? (
+            <Route
+              path="/"
+              render={props => (
+                <Popup4
+                  {...props}
+                  onVisible={this.onVisible}
+                  visible5={this.state.visible4}
+                />
+              )}
+            />
+          ) : (
+            ""
+          )}
+          {this.state.visible3 ? (
+            <Route
+              path="/"
+              render={props => (
+                <Popup3
+                  {...props}
+                  onVisible={this.onVisible}
+                  visible5={this.state.visible3}
+                />
+              )}
+            />
+          ) : (
+            ""
+          )}
+          {this.state.visible2 ? (
+            <Route
+              path="/"
+              render={props => (
+                <Popup2
+                  {...props}
+                  onVisible={this.onVisible}
+                  visible5={this.state.visible2}
+                />
+              )}
+            />
+          ) : (
+            ""
+          )}
           {this.state.visible1 ? (
             <Route
               path="/"
               render={props => (
                 <Popup1
                   {...props}
-                  onVisible={this.onVisible1}
-                  visible1={this.state.visible1}
+                  onVisible={this.onVisible}
+                  visible5={this.state.visible1}
                 />
               )}
             />

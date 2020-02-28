@@ -17,3 +17,34 @@
     animation-fill-mode: backwards;
   }
 }
+
+.arrow {
+  &,
+  &:link,
+  &:visited {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    position: absolute;
+    right: 8rem;
+    bottom: 8rem;
+    border-radius: 100%;
+    text-indent: 0;
+    line-height: 0;
+    backface-visibility: hidden;
+  }
+
+  &:hover {
+    bottom: 8.5rem;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    border: 2px solid transparent;
+  }
+
+  &:active {
+    bottom: 8.2rem;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  &__icon {
+    font-size: 5rem;
+  }
+}

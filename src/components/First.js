@@ -23,6 +23,9 @@ export default class First extends Component {
               Linkedin
             </a>
           </p>
+          <a href="#" className="arrow">
+            <i className="arrow__icon fas fa-chevron-circle-right"></i>
+          </a>
         </div>
       </section>
     );

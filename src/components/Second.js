@@ -29,6 +29,9 @@ export default class Second extends Component {
               Full-stack Web Developer in the Netherlands.
             </p>
           </div>
+          <a href="#" className="arrow">
+            <i className="arrow__icon fas fa-chevron-circle-right"></i>
+          </a>
         </div>
         <div className="image filtered tinted">
           <img src={pic2} alt="Adel" id="adel-pic" />

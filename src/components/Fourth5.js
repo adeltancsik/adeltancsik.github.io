@@ -19,20 +19,20 @@ export default class Fourth5 extends Component {
         </h2>
         <div className="fourth">
           <ul className="fourth__list">
-            <li className="fourth__item">Front-end:</li>
-            <ul className="fourth__list-2">
-              <li className="fourth__item">JavaScript (ES6)</li>
-              <li className="fourth__item">SASS</li>
-              <li className="fourth__item">CSS3 animations included</li>
-              <li className="fourth__item">HTML5</li>
-            </ul>
-            <li className="fourth__item">Full-stack</li>
-            <li className="fourth__item">Full-stack</li>
+            <li className="fourth__item">Responsive</li>
+            <li className="fourth__item">Animations</li>
+            <li className="fourth__item">SASS</li>
+            <li className="fourth__item">CSS3</li>
+            <li className="fourth__item">HTML5</li>
+            <li className="fourth__item">jQuery</li>
           </ul>
+          <p className="fourth__text">
+            &sdot;&sdot;&sdot;Under development&sdot;&sdot;&sdot;
+          </p>
           <img src={info} alt="Info" className="fourth__info" />
         </div>
         <button
-          className="btn btn--white remove-style"
+          className="btn btn--white btn--text remove-style"
           onClick={event => onVisible(event, 5)}
         >
           More info

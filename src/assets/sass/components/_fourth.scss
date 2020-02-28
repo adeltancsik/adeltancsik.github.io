@@ -1,6 +1,10 @@
 #fourth {
   // background-color: $color-wencel;
-  background-image: linear-gradient(45deg, $color-pink, $color-wencel);
+  background-image: linear-gradient(
+    45deg,
+    transparentize($color-pink, 0.2),
+    $color-wencel
+  );
   box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
   //   z-index: 2;
   color: $color-text;
@@ -13,6 +17,7 @@
 
     h2 {
       margin-top: 1.5rem;
+      margin-left: 1rem;
       color: $color-text;
     }
   }
@@ -31,10 +36,19 @@
     hyphens: auto;
     padding: 0;
     margin: 0;
+    font-size: 1.5rem;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 3rem;
   }
 
   &__item {
-    margin: 0 2rem;
+    margin: 0 0 0 4rem;
   }
 
   &__pic {
@@ -58,12 +72,12 @@
 
   &__info {
     display: inline-block;
-    width: 5rem;
+    width: 4rem;
     z-index: 4;
     position: absolute;
-    right: 12rem;
-    bottom: 4rem;
-    // transform: translate(300%, -45%);
+    right: 13rem;
+    bottom: 3.5rem;
+    // visibility: hidden;
   }
 }
 
@@ -77,13 +91,12 @@
     text-decoration: none;
     /* first: top&bottom, second: right&left; with 4: top right bottom left */
     padding: 1rem 2rem;
-    margin-top: 2rem;
+    // margin-top: 1rem;
     display: inline-block;
     border-radius: 10rem;
     /* all the properties are enabled to be animated */
     transition: all 0.3s;
     position: relative;
-    font-size: 1.4rem;
     width: fit-content;
     align-self: center;
     z-index: 4;
@@ -120,6 +133,12 @@
     }
   }
 
+  &--text {
+    position: absolute;
+    right: 15rem;
+    bottom: 2rem;
+  }
+
   /* after is a pseudo element placed after another element */
   &::after {
     /* we have to specify the content and display properties in order to work */
@@ -149,7 +168,7 @@
   color: inherit;
   background-color: inherit;
   font-family: inherit;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   border: none;
 }

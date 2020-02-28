@@ -1,19 +1,30 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
+import $ from "jquery";
+import { CSSTransition } from "react-transition-group";
 import Intro from "./components/Intro";
 import First from "./components/First";
 import Second from "./components/Second";
 import Third from "./components/Third";
-import FadeInSection from "./components/FadeInSection";
 import Fourth from "./components/Fourth";
 import Popup5 from "./components/Popup5";
-import $ from "jquery";
-import { CSSTransition } from "react-transition-group";
 import Popup4 from "./components/Popup4";
 import Popup3 from "./components/Popup3";
 import Popup2 from "./components/Popup2";
 import Popup1 from "./components/Popup1";
+import FadeInSection from "./components/FadeInSection";
+// const Intro = lazy(() => import("./components/Intro"));
+// const First = lazy(() => import("./components/First"));
+// const Second = lazy(() => import("./components/Second"));
+// const Third = lazy(() => import("./components/Third"));
+// const Fourth = lazy(() => import("./components/Fourth"));
+// const Popup5 = lazy(() => import("./components/Popup5"));
+// const Popup4 = lazy(() => import("./components/Popup4"));
+// const Popup3 = lazy(() => import("./components/Popup3"));
+// const Popup2 = lazy(() => import("./components/Popup2"));
+// const Popup1 = lazy(() => import("./components/Popup1"));
+// const FadeInSection = lazy(() => import("./components/FadeInSection"));
 
 class App extends Component {
   componentDidMount() {
@@ -69,6 +80,7 @@ class App extends Component {
   render() {
     return (
       <CSSTransition in={true} appear={true} timeout={2000} classNames="fade">
+        {/* <Suspense fallback={<div className="lds-dual-ring" id="spinner"></div>}> */}
         <div id="app">
           <Route path="/" exact component={Intro} />
           <Route path="/" exact component={First} />
@@ -154,6 +166,7 @@ class App extends Component {
           )}
           <div className="lds-dual-ring" id="spinner"></div>
         </div>
+        {/* </Suspense> */}
       </CSSTransition>
     );
   }

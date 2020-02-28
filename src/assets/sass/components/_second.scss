@@ -23,6 +23,19 @@
       font-weight: 300;
     }
   }
+
+  .arrow {
+    right: 2rem;
+    bottom: 2rem;
+
+    &:hover {
+      bottom: 2.5rem;
+    }
+
+    &:active {
+      bottom: 2.2rem;
+    }
+  }
 }
 
 #adel-pic {

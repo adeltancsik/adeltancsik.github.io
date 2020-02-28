@@ -115,7 +115,7 @@ class App extends Component {
                 <Popup4
                   {...props}
                   onVisible={this.onVisible}
-                  visible5={this.state.visible4}
+                  visible4={this.state.visible4}
                 />
               )}
             />
@@ -129,7 +129,7 @@ class App extends Component {
                 <Popup3
                   {...props}
                   onVisible={this.onVisible}
-                  visible5={this.state.visible3}
+                  visible3={this.state.visible3}
                 />
               )}
             />
@@ -143,7 +143,7 @@ class App extends Component {
                 <Popup2
                   {...props}
                   onVisible={this.onVisible}
-                  visible5={this.state.visible2}
+                  visible2={this.state.visible2}
                 />
               )}
             />
@@ -157,7 +157,7 @@ class App extends Component {
                 <Popup1
                   {...props}
                   onVisible={this.onVisible}
-                  visible5={this.state.visible1}
+                  visible1={this.state.visible1}
                 />
               )}
             />

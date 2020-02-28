@@ -3,6 +3,13 @@ import pic2 from "../assets/images/Adel.jpg";
 
 export default class Second extends Component {
   render() {
+    const scrolling = () => {
+      document.querySelector("#third").scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+      });
+    };
     return (
       <section id="second" className="panel spotlight right">
         <div className="content right span-7-5">
@@ -29,7 +36,7 @@ export default class Second extends Component {
               Full-stack Web Developer in the Netherlands.
             </p>
           </div>
-          <a href="#" className="arrow">
+          <a className="arrow" onClick={scrolling}>
             <i className="arrow__icon fas fa-chevron-circle-right"></i>
           </a>
         </div>

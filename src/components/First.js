@@ -2,6 +2,13 @@ import React, { Component } from "react";
 
 export default class First extends Component {
   render() {
+    const scrolling = () => {
+      document.querySelector("#second").scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center"
+      });
+    };
     return (
       <section id="first" className="panel">
         <div className="content span-5-5">
@@ -23,7 +30,7 @@ export default class First extends Component {
               Linkedin
             </a>
           </p>
-          <a href="#" className="arrow">
+          <a className="arrow" onClick={scrolling}>
             <i className="arrow__icon fas fa-chevron-circle-right"></i>
           </a>
         </div>

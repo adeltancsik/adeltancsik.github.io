@@ -6,7 +6,7 @@ export default class Fourth5 extends Component {
   render() {
     const { onVisible } = this.props;
     return (
-      <div className="content span-4">
+      <div className="content span-4" id="fourth5">
         <img src={natours} alt="natours-gif" className="fourth__pic" />
         <h2 className="major">
           Natours

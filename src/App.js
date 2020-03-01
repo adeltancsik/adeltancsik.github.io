@@ -15,6 +15,7 @@ import Popup2 from "./components/Popup2";
 import Popup1 from "./components/Popup1";
 import FadeInSection from "./components/FadeInSection";
 import Fifth from "./components/Fifth";
+import Sixth from "./components/Sixth";
 // const Intro = lazy(() => import("./components/Intro"));
 // const First = lazy(() => import("./components/First"));
 // const Second = lazy(() => import("./components/Second"));
@@ -97,6 +98,9 @@ class App extends Component {
           </FadeInSection>
           <FadeInSection>
             <Route path="/" exact component={Fifth} />
+          </FadeInSection>
+          <FadeInSection>
+            <Route path="/" exact component={Sixth} />
           </FadeInSection>
           {this.state.visible5 ? (
             <Route

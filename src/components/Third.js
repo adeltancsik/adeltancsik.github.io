@@ -6,8 +6,8 @@ export default class Third extends Component {
       <section id="third" className="panel">
         <div className="content span-4-5">
           <h1 className="major">
-            Projects
-            {/* <i class="fas fa-code"></i> */}
+            Projects&nbsp;
+            <i className="fas fa-code"></i>
           </h1>
           <p className="justifying">
             The projects are in time order, starting with the latest one.

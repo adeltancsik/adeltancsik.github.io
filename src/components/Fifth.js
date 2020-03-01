@@ -10,12 +10,16 @@ export default class Fifth extends Component {
           <h1 className="major title">Resume</h1>
           <p>Check out my CV or download it in PDF format.</p>
           <div className="btn__container">
-            <a href={cv} class="btn btn--white remove-style" target="_blank">
+            <a
+              href={cv}
+              className="btn btn--white remove-style"
+              target="_blank"
+            >
               View
             </a>
             <a
               href={cv}
-              class="btn btn--white remove-style"
+              className="btn btn--white remove-style"
               download="Adél Tancsik CV"
             >
               Download

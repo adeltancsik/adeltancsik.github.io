@@ -1,0 +1,44 @@
+#sixth {
+  background-color: $color-pink;
+  box-shadow: 0 3rem 5rem 1.2rem transparentize($color-grey-dark, 0.425);
+  z-index: 2;
+
+  .to_right {
+    align-self: flex-end;
+    // width: 90%;
+    margin: 0 0rem 0rem 5rem;
+  }
+
+  .arrow {
+    &,
+    &:link,
+    &:visited {
+      left: 1.5rem;
+      right: auto;
+    }
+  }
+}
+
+.sixth__link {
+  &,
+  :link,
+  :visited {
+    border-bottom: none;
+  }
+}
+
+.sixth__icon {
+  // we can use font attributes on the icon, because the icon font is text
+  font-size: 3rem;
+  margin: 1rem;
+  display: inline-block;
+  color: $color-text;
+  transition: all 0.5s ease;
+  backface-visibility: hidden;
+  transform: translateY(15%);
+
+  &:hover {
+    transform: scale(1.2);
+    color: $color-blue-light;
+  }
+}

@@ -14,6 +14,7 @@ import Popup3 from "./components/Popup3";
 import Popup2 from "./components/Popup2";
 import Popup1 from "./components/Popup1";
 import FadeInSection from "./components/FadeInSection";
+import Fifth from "./components/Fifth";
 // const Intro = lazy(() => import("./components/Intro"));
 // const First = lazy(() => import("./components/First"));
 // const Second = lazy(() => import("./components/Second"));
@@ -93,6 +94,9 @@ class App extends Component {
               path="/"
               render={props => <Fourth {...props} onVisible={this.onVisible} />}
             />
+          </FadeInSection>
+          <FadeInSection>
+            <Route path="/" exact component={Fifth} />
           </FadeInSection>
           {this.state.visible5 ? (
             <Route

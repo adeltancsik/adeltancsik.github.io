@@ -19,7 +19,7 @@ export default class First extends Component {
             </span>
           </h1>
           <p>
-            This is my <strong>Portfolio</strong>, hope you enjoy it.
+            This is my Portfolio, hope you enjoy it.
             <br />
             Feel free to connect and contact me on&nbsp;
             <a

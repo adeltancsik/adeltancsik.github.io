@@ -9,7 +9,7 @@ export default class Fourth2 extends Component {
       <div className="content span-4">
         <img src={testClient} alt="Test Client gif" className="fourth__pic" />
         <h2 className="major">
-          Codaisseur's Student Assessment
+          Codaisseur's Dynamic Student Assessment
           <a
             href="https://www.github.com/Official-Codaisseur-Graduate/Dynamic-Student-Assessment-Server"
             target="_blank"

@@ -6,7 +6,8 @@
     align-items: flex-end;
   }
   .medium {
-    width: 63%;
+    width: 60%;
+    margin-right: 4rem;
   }
 
   blockquote {
@@ -24,18 +25,18 @@
     }
   }
 
-  .arrow {
-    right: 2rem;
-    bottom: 2rem;
+  // .arrow {
+  //   right: 2rem;
+  //   bottom: 2rem;
 
-    &:hover {
-      bottom: 2.5rem;
-    }
+  //   &:hover {
+  //     bottom: 2.5rem;
+  //   }
 
-    &:active {
-      bottom: 2.2rem;
-    }
-  }
+  //   &:active {
+  //     bottom: 2.2rem;
+  //   }
+  // }
 }
 
 #adel-pic {

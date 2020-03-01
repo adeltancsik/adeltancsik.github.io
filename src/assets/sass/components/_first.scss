@@ -29,19 +29,19 @@
 }
 
 .arrow {
-  &,
-  &:link,
-  &:visited {
-    border: 2px solid transparent;
-    transition: all 0.3s ease;
-    position: absolute;
-    right: 1.5rem;
-    bottom: 45%;
-    border-radius: 100%;
-    text-indent: 0;
-    line-height: 0;
-    backface-visibility: hidden;
-  }
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  position: absolute;
+  right: 1.5rem;
+  bottom: 45%;
+  border-radius: 100%;
+  text-indent: 0;
+  line-height: 0;
+  backface-visibility: hidden;
+  background-color: transparent;
+  fill: whitesmoke;
+  appearance: none;
+  color: $color-text;
 
   &:hover {
     bottom: 46%;
@@ -49,9 +49,11 @@
     border: 2px solid transparent;
   }
 
-  &:active {
+  &:active,
+  &:focus {
     bottom: 45.5%;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    outline: none;
   }
 
   &__icon {

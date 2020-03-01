@@ -30,9 +30,9 @@ export default class First extends Component {
               Linkedin
             </a>
           </p>
-          <a className="arrow" onClick={scrolling}>
+          <button className="arrow" onClick={scrolling}>
             <i className="arrow__icon fas fa-chevron-circle-right"></i>
-          </a>
+          </button>
         </div>
       </section>
     );

@@ -12,6 +12,7 @@ export default class Fourth2 extends Component {
           Codaisseur's Dynamic Student Assessment
           <a
             href="https://www.github.com/Official-Codaisseur-Graduate/Dynamic-Student-Assessment-Server"
+            // eslint-disable-next-line
             target="_blank"
           >
             <i className="fourth__icon fab fa-github"></i>

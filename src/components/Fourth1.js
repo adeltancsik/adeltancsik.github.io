@@ -10,11 +10,16 @@ export default class Fourth1 extends Component {
         <img src={quiz} alt="Quiz gif" className="fourth__pic" />
         <h2 className="major">
           Multiplayer Quiz
-          <a href="https://quizam.netlify.com" target="_blank">
+          <a
+            href="https://quizam.netlify.com"
+            // eslint-disable-next-line
+            target="_blank"
+          >
             <i className="fourth__icon fas fa-globe"></i>
           </a>
           <a
             href="https://github.com/mtabanja/week7-game-project-client"
+            // eslint-disable-next-line
             target="_blank"
           >
             <i className="fourth__icon fab fa-github"></i>

@@ -71,7 +71,7 @@ class App extends Component {
           ? this.setState({ visible2: true })
           : this.setState({ visible2: false });
         break;
-      case 1:
+      default:
         !this.state.visible1
           ? this.setState({ visible1: true })
           : this.setState({ visible1: false });

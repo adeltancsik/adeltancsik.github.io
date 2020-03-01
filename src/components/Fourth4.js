@@ -16,6 +16,7 @@ export default class Fourth4 extends Component {
           Journey Planner
           <a
             href="https://www.github.com/adeltancsik/client-journey-planner"
+            // eslint-disable-next-line
             target="_blank"
           >
             <i className="fourth__icon fab fa-github"></i>

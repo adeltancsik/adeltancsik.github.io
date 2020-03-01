@@ -12,6 +12,7 @@ export default class Fourth5 extends Component {
           Natours
           <a
             href="https://natours-learning-project.netlify.com"
+            // eslint-disable-next-line
             target="_blank"
           >
             <i className="fourth__icon fas fa-globe"></i>

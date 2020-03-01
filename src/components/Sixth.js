@@ -20,6 +20,7 @@ export default class Sixth extends Component {
             <a
               className="sixth__link"
               href="https://www.linkedin.com/in/adel-tancsik/"
+              // eslint-disable-next-line
               target="_blank"
             >
               <i className="sixth__icon fab fa-linkedin"></i>
@@ -28,15 +29,16 @@ export default class Sixth extends Component {
             <a
               className="sixth__link"
               href="https://www.github.com/adeltancsik"
+              // eslint-disable-next-line
               target="_blank"
             >
               <i className="sixth__icon fab fa-github-square"></i>
               github.com/adeltancsik
             </a>
           </div>
-          <a className="arrow" onClick={scrolling}>
+          <button className="arrow" onClick={scrolling}>
             <i className="arrow__icon fas fa-chevron-circle-left"></i>
-          </a>
+          </button>
         </div>
       </section>
     );

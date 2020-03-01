@@ -13,6 +13,7 @@ export default class Fifth extends Component {
             <a
               href={cv}
               className="btn btn--white remove-style"
+              // eslint-disable-next-line
               target="_blank"
             >
               View

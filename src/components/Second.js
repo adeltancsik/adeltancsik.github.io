@@ -36,9 +36,10 @@ export default class Second extends Component {
               Full-stack Web Developer in the Netherlands.
             </p>
           </div>
-          <a className="arrow" onClick={scrolling}>
+
+          <button className="arrow" onClick={scrolling}>
             <i className="arrow__icon fas fa-chevron-circle-right"></i>
-          </a>
+          </button>
         </div>
         <div className="image filtered tinted">
           <img src={pic2} alt="Adel" id="adel-pic" />

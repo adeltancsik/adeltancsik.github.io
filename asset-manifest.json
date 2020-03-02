@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/css/main.d073baee.chunk.css",
+    "main.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/main.e9801f71.chunk.js",
+    "main.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/main.e9801f71.chunk.js.map",
+    "runtime-main.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/runtime-main.a2885799.js",
+    "runtime-main.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/runtime-main.a2885799.js.map",
+    "static/js/2.6177a0c4.chunk.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/2.6177a0c4.chunk.js",
+    "static/js/2.6177a0c4.chunk.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/2.6177a0c4.chunk.js.map",
+    "static/js/3.570c5a67.chunk.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/3.570c5a67.chunk.js",
+    "static/js/3.570c5a67.chunk.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/3.570c5a67.chunk.js.map",
+    "static/js/4.355915df.chunk.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/4.355915df.chunk.js",
+    "static/js/4.355915df.chunk.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/4.355915df.chunk.js.map",
+    "static/js/5.1ccca4a9.chunk.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/5.1ccca4a9.chunk.js",
+    "static/js/5.1ccca4a9.chunk.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/5.1ccca4a9.chunk.js.map",
+    "static/js/6.57a14609.chunk.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/6.57a14609.chunk.js",
+    "static/js/6.57a14609.chunk.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/6.57a14609.chunk.js.map",
+    "static/js/7.a8db1ff5.chunk.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/7.a8db1ff5.chunk.js",
+    "static/js/7.a8db1ff5.chunk.js.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/7.a8db1ff5.chunk.js.map",
+    "index.html": "/git@github.com:adeltancsik/adeltancsik.github.io.git/index.html",
+    "precache-manifest.c8049e39a86c5b200e84346e9f38d553.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/precache-manifest.c8049e39a86c5b200e84346e9f38d553.js",
+    "service-worker.js": "/git@github.com:adeltancsik/adeltancsik.github.io.git/service-worker.js",
+    "static/css/main.d073baee.chunk.css.map": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/css/main.d073baee.chunk.css.map",
+    "static/js/2.6177a0c4.chunk.js.LICENSE.txt": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/js/2.6177a0c4.chunk.js.LICENSE.txt",
+    "static/media/Adel.jpg": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/Adel.c0e145e6.jpg",
+    "static/media/Adél Tancsik CV.pdf": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/Adél Tancsik CV.9462a5db.pdf",
+    "static/media/adi6.jpg": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/adi6.ef8c0f2d.jpg",
+    "static/media/style.min.css": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/overlay.63ef37a4.png",
+    "static/media/journey-planner.gif": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/journey-planner.bae6c3a1.gif",
+    "static/media/natours.gif": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/natours.00d81997.gif",
+    "static/media/quiz.gif": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/quiz.5fa08535.gif",
+    "static/media/table.jpg": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/table.46539237.jpg",
+    "static/media/test-client.gif": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/test-client.1134e67a.gif",
+    "static/media/ticket-swap.gif": "/git@github.com:adeltancsik/adeltancsik.github.io.git/static/media/ticket-swap.3c249caf.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2885799.js",
+    "static/js/2.6177a0c4.chunk.js",
+    "static/css/main.d073baee.chunk.css",
+    "static/js/main.e9801f71.chunk.js"
+  ]
+}

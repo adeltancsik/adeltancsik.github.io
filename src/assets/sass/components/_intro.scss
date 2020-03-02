@@ -10,6 +10,11 @@
   animation: moveInLeft_section 2s ease-out 0.5s;
   animation-fill-mode: backwards;
   z-index: 0;
+
+  @include respond(phone) {
+    animation: none;
+    display: none;
+  }
 }
 
 .intro {

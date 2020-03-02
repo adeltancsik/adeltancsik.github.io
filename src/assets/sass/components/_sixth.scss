@@ -17,6 +17,10 @@
       right: auto;
     }
   }
+
+  @include respond(phone) {
+    box-shadow: none;
+  }
 }
 
 .sixth__link {
@@ -24,6 +28,10 @@
   :link,
   :visited {
     border-bottom: none;
+
+    @include respond(phone) {
+      display: inline-block;
+    }
   }
 }
 
@@ -40,5 +48,10 @@
   &:hover {
     transform: scale(1.2);
     color: $color-blue-light;
+  }
+
+  @include respond(phone) {
+    font-size: 2.5rem;
+    margin: 0.5rem;
   }
 }

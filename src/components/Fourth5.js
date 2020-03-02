@@ -30,14 +30,16 @@ export default class Fourth5 extends Component {
           <p className="fourth__text">
             &sdot;&sdot;&sdot;Under development&sdot;&sdot;&sdot;
           </p>
+        </div>
+        <div className="fourth__btn-container">
+          <button
+            className="btn btn--white btn--text remove-style"
+            onClick={event => onVisible(event, 5)}
+          >
+            More info
+          </button>
           <img src={info} alt="Info" className="fourth__info" />
         </div>
-        <button
-          className="btn btn--white btn--text remove-style"
-          onClick={event => onVisible(event, 5)}
-        >
-          More info
-        </button>
       </div>
     );
   }

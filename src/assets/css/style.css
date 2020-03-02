@@ -4,7 +4,7 @@
   0 - 600px:      Phone
   600 - 900px:    Tablet portrait
   900 - 1200px:   Tablet landscape
-  [1200 - 1800] is where our normal styles apply
+  [1200 - 1800] is where the normal styles apply
   1800px + :      Big desktop
   
   $breakpoint argument choices:
@@ -64,6 +64,11 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      height: auto;
+      width: 100%;
+      font-size: 48%; } }
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
@@ -90,9 +95,11 @@ body {
     background-color: #faececab;
     background-repeat: repeat, repeat-x;
     background-size: 128px 128px, cover; }
-  @media only screen and (max-width: 56.25em) {
+  @media only screen and (max-width: 37.5em) {
     body {
-      padding: 0; } }
+      height: auto;
+      overflow-y: auto;
+      flex-shrink: 0; } }
 
 ::selection {
   background-color: #de6c74;
@@ -233,6 +240,9 @@ blockquote {
       border: 2px solid rgba(255, 255, 255, 0.2); }
     #fifth .content .btn__container {
       margin-top: 2rem; }
+  @media only screen and (max-width: 37.5em) {
+    #fifth {
+      box-shadow: none; } }
 
 .image #table {
   object-position: left; }
@@ -253,6 +263,9 @@ blockquote {
     animation-fill-mode: backwards; }
   #first p {
     font-weight: 400; }
+  @media only screen and (max-width: 37.5em) {
+    #first {
+      box-shadow: none; } }
 
 .arrow {
   border: 2px solid transparent;
@@ -287,13 +300,18 @@ blockquote {
   #fourth .content {
     padding: 2rem 2rem;
     justify-content: start;
-    z-index: 10; }
+    z-index: 10;
+    position: relative;
+    height: 100%; }
     #fourth .content h2 {
       margin-top: 1.5rem;
       margin-left: 1rem;
       color: rgba(255, 255, 255, 0.75); }
   #fourth a {
     border-bottom: none; }
+  @media only screen and (max-width: 37.5em) {
+    #fourth {
+      box-shadow: none; } }
 
 .fourth {
   z-index: 10; }
@@ -304,6 +322,9 @@ blockquote {
     padding: 0;
     margin: 0;
     font-size: 1.5rem; }
+    @media only screen and (max-width: 15.625em) {
+      .fourth__list {
+        column-count: 1; } }
   .fourth__text {
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -326,11 +347,20 @@ blockquote {
       color: #00c9d0; }
   .fourth__info {
     display: inline-block;
-    width: 4rem;
-    z-index: 4;
+    width: 4rem; }
+    @media only screen and (max-width: 15.625em) {
+      .fourth__info {
+        display: none; } }
+  .fourth__btn-container {
+    text-align: center;
     position: absolute;
-    right: 13rem;
-    bottom: 3.5rem; }
+    bottom: 3%;
+    width: 100%;
+    height: fit-content; }
+    @media only screen and (max-width: 37.5em) {
+      .fourth__btn-container {
+        position: relative;
+        bottom: 0; } }
 
 .btn {
   /* active is when we click on the element */
@@ -367,9 +397,7 @@ blockquote {
     .btn--white::after {
       background-color: transparent; }
   .btn--text {
-    position: absolute;
-    right: 15rem;
-    bottom: 2rem; }
+    margin-right: -1rem; }
   .btn::after {
     /* we have to specify the content and display properties in order to work */
     content: "";
@@ -393,6 +421,9 @@ blockquote {
   font-size: 1.2rem;
   text-transform: uppercase;
   border: none; }
+  @media only screen and (max-width: 15.625em) {
+    .remove-style {
+      border: 1px solid rgba(255, 255, 255, 0.2); } }
 
 #project_title {
   margin-bottom: 3rem; }
@@ -402,6 +433,10 @@ blockquote {
   animation: moveInLeft_section 2s ease-out 0.5s;
   animation-fill-mode: backwards;
   z-index: 0; }
+  @media only screen and (max-width: 37.5em) {
+    #intro {
+      animation: none;
+      display: none; } }
 
 .intro__container {
   overflow: hidden; }
@@ -457,6 +492,13 @@ blockquote {
       position: absolute;
       top: 0.3rem;
       right: 0.3rem; }
+    @media only screen and (max-width: 75em) {
+      .popup__content {
+        width: 86%;
+        height: auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup__content {
+        padding: 4%; } }
   .popup__link {
     border-bottom: none; }
     .popup__link i {
@@ -472,6 +514,15 @@ blockquote {
       width: 60%;
       height: 100%;
       float: left; }
+      @media only screen and (max-width: 37.5em) {
+        .popup__pic--container {
+          width: 70%;
+          float: none;
+          position: relative;
+          margin: 0 auto; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup__pic {
+        position: relative; } }
   .popup__text {
     width: 32%;
     float: right;
@@ -481,6 +532,18 @@ blockquote {
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto; }
+    @media only screen and (max-width: 75em) {
+      .popup__text {
+        font-size: 1.6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .popup__text {
+        width: 90%;
+        float: none;
+        margin: 3%;
+        padding: 0; } }
+  @media only screen and (max-width: 75em) {
+    .popup {
+      transition: none !important; } }
 
 #second {
   box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
@@ -489,7 +552,13 @@ blockquote {
     align-items: flex-end; }
   #second .medium {
     width: 60%;
-    margin-right: 4rem; }
+    margin-right: 4.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      #second .medium {
+        width: 92%;
+        color: #fff;
+        font-weight: 400;
+        margin-right: 2rem; } }
   #second blockquote {
     margin-bottom: 2%;
     font-weight: 400;
@@ -501,9 +570,17 @@ blockquote {
       font-style: normal;
       font-size: 1.3rem;
       font-weight: 300; }
+  @media only screen and (max-width: 37.5em) {
+    #second {
+      box-shadow: none; }
+      #second .arrow {
+        display: none; } }
 
 #adel-pic {
   object-position: top; }
+  @media only screen and (max-width: 37.5em) {
+    #adel-pic {
+      object-position: top left; } }
 
 .image {
   display: inline-block;
@@ -524,6 +601,9 @@ blockquote {
   .image.filtered.tinted:after {
     background-image: url("../images/overlay.png"), linear-gradient(55deg, rgba(245, 244, 248, 0.25) 30%, rgba(222, 108, 116, 0.25) 55%, rgba(0, 201, 208, 0.25)), linear-gradient(0deg, rgba(0, 0, 0, 0.125), rgba(0, 0, 0, 0.125));
     background-size: 128px 128px, auto, auto; }
+    @media only screen and (max-width: 37.5em) {
+      .image.filtered.tinted:after {
+        background-color: rgba(0, 0, 0, 0.2); } }
 
 #sixth {
   background-color: #de6c74;
@@ -535,11 +615,19 @@ blockquote {
   #sixth .arrow, #sixth .arrow:link, #sixth .arrow:visited {
     left: 1.5rem;
     right: auto; }
+  @media only screen and (max-width: 37.5em) {
+    #sixth {
+      box-shadow: none; } }
 
 .sixth__link,
 .sixth__link :link,
 .sixth__link :visited {
   border-bottom: none; }
+  @media only screen and (max-width: 37.5em) {
+    .sixth__link,
+    .sixth__link :link,
+    .sixth__link :visited {
+      display: inline-block; } }
 
 .sixth__icon {
   font-size: 3rem;
@@ -552,12 +640,19 @@ blockquote {
   .sixth__icon:hover {
     transform: scale(1.2);
     color: #00c9d0; }
+  @media only screen and (max-width: 37.5em) {
+    .sixth__icon {
+      font-size: 2.5rem;
+      margin: 0.5rem; } }
 
 #third {
   background-color: #00c9d0;
   box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575);
   z-index: 2;
   color: #fff; }
+  @media only screen and (max-width: 37.5em) {
+    #third {
+      box-shadow: none; } }
 
 #root {
   display: flex;
@@ -567,6 +662,24 @@ blockquote {
   flex-shrink: 1;
   height: 100%;
   padding: 8rem; }
+  @media screen and (orientation: portrait) {
+    #root {
+      padding-left: 3rem;
+      padding-right: 3rem; } }
+  @media only screen and (min-aspect-ratio: 16 / 7) {
+    #root {
+      padding: 6vh; } }
+  @media only screen and (min-aspect-ratio: 16 / 6) {
+    #root {
+      padding: 0; } }
+
+@media only screen and (max-width: 37.5em) {
+  #root {
+    height: auto;
+    padding: 1rem;
+    width: 100%;
+    flex-grow: 0;
+    flex-shrink: 0; } }
 
 #app {
   display: flex;
@@ -576,6 +689,13 @@ blockquote {
   cursor: default;
   position: relative;
   height: 50rem; }
+
+@media only screen and (max-width: 37.5em) {
+  #app {
+    flex-direction: column;
+    height: auto;
+    margin: 0 0 5rem 0;
+    width: 100%; } }
 
 #spinner {
   background-color: transparent;
@@ -610,6 +730,13 @@ blockquote {
   visibility: hidden;
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility; }
+  @media only screen and (max-width: 37.5em) {
+    .fade-in-section {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+      transition: none;
+      will-change: auto; } }
 
 .fade-in-section.is-visible {
   opacity: 1;
@@ -621,10 +748,17 @@ blockquote {
 .fade-appear {
   opacity: 0;
   z-index: 1; }
+  @media only screen and (max-width: 75em) {
+    .fade-appear {
+      opacity: 1;
+      z-index: 3000; } }
 
 .fade-appear-active {
   opacity: 1;
   transition: opacity 500ms linear; }
+  @media only screen and (max-width: 75em) {
+    .fade-appear-active {
+      transition: none; } }
 
 /* enter */
 .fade-enter {
@@ -639,6 +773,9 @@ blockquote {
 .fade-enter-done {
   opacity: 1;
   transition: all 5000ms ease-in; }
+  @media only screen and (max-width: 75em) {
+    .fade-enter-done {
+      transition: none; } }
 
 /* exit */
 .fade-exit {
@@ -664,13 +801,22 @@ blockquote {
 
 .span-4 {
   width: 40rem; }
+  @media only screen and (max-width: 37.5em) {
+    .span-4 {
+      width: 100%; } }
   .span-4-5 {
     width: 45rem; }
+    @media only screen and (max-width: 37.5em) {
+      .span-4-5 {
+        width: 100%; } }
 
 .span-5 {
   width: 50rem; }
   .span-5-5 {
     width: 55rem; }
+    @media only screen and (max-width: 37.5em) {
+      .span-5-5 {
+        width: 100%; } }
 
 .span-6 {
   width: 60rem; }
@@ -681,6 +827,9 @@ blockquote {
   width: 70rem; }
   .span-7-5 {
     width: 75rem; }
+    @media only screen and (max-width: 37.5em) {
+      .span-7-5 {
+        width: 100%; } }
 
 .panel {
   display: flex;
@@ -701,10 +850,19 @@ blockquote {
     padding: 3.5rem;
     flex-grow: 0;
     flex-shrink: 0; }
+    @media only screen and (max-width: 37.5em) {
+      .panel .content {
+        padding: 2rem;
+        flex-direction: column !important;
+        min-height: 25rem; } }
   .panel.left {
     flex-direction: row; }
   .panel.right {
     flex-direction: row-reverse; }
+  @media only screen and (max-width: 37.5em) {
+    .panel {
+      height: auto;
+      flex-direction: column; } }
 
 .panel.spotlight {
   align-items: stretch;
@@ -716,6 +874,9 @@ blockquote {
     flex-direction: column;
     justify-content: center;
     padding: 3.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .panel.spotlight .content {
+        padding: 2rem; } }
   .panel.spotlight .image {
     position: absolute;
     top: 0;

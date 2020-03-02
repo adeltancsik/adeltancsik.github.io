@@ -20,6 +20,17 @@
     padding: 3.5rem;
     flex-grow: 0;
     flex-shrink: 0;
+
+    @include respond(phone) {
+      padding: 2rem;
+      flex-direction: column !important;
+      // background-image: linear-gradient(
+      //   0deg,
+      //   rgba(0, 0, 0, 0.25) 70%,
+      //   rgba(0, 0, 0, 0.175)
+      // ) !important;
+      min-height: 25rem;
+    }
   }
 
   &.left {
@@ -28,6 +39,11 @@
 
   &.right {
     flex-direction: row-reverse;
+  }
+
+  @include respond(phone) {
+    height: auto;
+    flex-direction: column;
   }
 }
 
@@ -44,6 +60,10 @@
     flex-direction: column;
     justify-content: center;
     padding: 3.5rem;
+
+    @include respond(phone) {
+      padding: 2rem;
+    }
   }
 
   .image {

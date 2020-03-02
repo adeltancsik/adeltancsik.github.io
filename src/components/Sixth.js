@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class Sixth extends Component {
   render() {
     const scrolling = () => {
-      document.querySelector("#intro").scrollIntoView({
+      document.querySelector("#first").scrollIntoView({
         behavior: "smooth",
         block: "center",
         inline: "center"

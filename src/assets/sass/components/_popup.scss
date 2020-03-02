@@ -45,6 +45,14 @@
       top: 0.3rem;
       right: 0.3rem;
     }
+
+    @include respond(tab-land) {
+      width: 86%;
+      height: auto;
+    }
+    @include respond(phone) {
+      padding: 4%;
+    }
   }
 
   &__link {
@@ -69,6 +77,17 @@
       width: 60%;
       height: 100%;
       float: left;
+
+      @include respond(phone) {
+        width: 70%;
+        float: none;
+        position: relative;
+        margin: 0 auto;
+      }
+    }
+
+    @include respond(phone) {
+      position: relative;
     }
 
     // @include respond(tab-port) {
@@ -89,6 +108,16 @@
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
+
+    @include respond(tab-land) {
+      font-size: 1.6rem;
+    }
+    @include respond(phone) {
+      width: 90%;
+      float: none;
+      margin: 3%;
+      padding: 0;
+    }
 
     //   @include respond(phone) {
     //     columns: 1;
@@ -120,4 +149,8 @@
   //     color: $color-primary;
   //   }
   // }
+
+  @include respond(tab-land) {
+    transition: none !important;
+  }
 }

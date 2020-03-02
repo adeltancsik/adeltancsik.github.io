@@ -28,6 +28,10 @@
       margin-top: 2rem;
     }
   }
+
+  @include respond(phone) {
+    box-shadow: none;
+  }
 }
 
 .image {

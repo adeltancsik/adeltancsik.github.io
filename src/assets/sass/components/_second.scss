@@ -7,7 +7,13 @@
   }
   .medium {
     width: 60%;
-    margin-right: 4rem;
+    margin-right: 4.5rem;
+    @include respond(phone) {
+      width: 92%;
+      color: $color-white;
+      font-weight: 400;
+      margin-right: 2rem;
+    }
   }
 
   blockquote {
@@ -25,22 +31,20 @@
     }
   }
 
-  // .arrow {
-  //   right: 2rem;
-  //   bottom: 2rem;
+  @include respond(phone) {
+    box-shadow: none;
 
-  //   &:hover {
-  //     bottom: 2.5rem;
-  //   }
-
-  //   &:active {
-  //     bottom: 2.2rem;
-  //   }
-  // }
+    .arrow {
+      display: none;
+    }
+  }
 }
 
 #adel-pic {
   object-position: top;
+  @include respond(phone) {
+    object-position: top left;
+  }
 }
 
 .image {
@@ -65,6 +69,9 @@
     &.tinted {
       &:after {
         @include gradient-background(true);
+        @include respond(phone) {
+          background-color: transparentize($color: #000000, $amount: 0.8);
+        }
       }
     }
   }

@@ -26,6 +26,10 @@
   p {
     font-weight: 400;
   }
+
+  @include respond(phone) {
+    box-shadow: none;
+  }
 }
 
 .arrow {

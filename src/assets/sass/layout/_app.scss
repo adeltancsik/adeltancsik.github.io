@@ -46,10 +46,6 @@
     height: auto;
     margin: 0 0 5rem 0;
     width: 100%;
-
-    // body.is-preload & {
-    //   @include vendor('transform', 'translateY(1rem)');
-    // }
   }
 }
 
@@ -76,7 +72,6 @@
     width: 5rem;
     height: 5rem;
     margin: -2rem 0 0 -2rem;
-    // margin: 8px;
     border-radius: 50%;
     border: 6px solid $color-grey-dark;
     border-color: $color-grey-dark transparent $color-grey-dark transparent;
@@ -164,35 +159,3 @@
   transform: translate(-50%, -50%) scale(0.2);
   transition: all 5000ms ease-in;
 }
-
-// @media screen and (orientation: portrait) {
-//   #app {
-//     padding-left: 2rem;
-//     padding-right: 2rem;
-//   }
-// }
-
-// @media screen and (min-aspect-ratio: 16 / 7) {
-//   #app {
-//     padding: 6vh;
-//   }
-// }
-
-// @media screen and (min-aspect-ratio: 16 / 6) {
-//   #app {
-//     padding: 0;
-//   }
-// }
-
-// @media screen and (max-width: 736px) {
-//   #app {
-//     height: auto;
-//     padding: 1rem;
-//   }
-// }
-
-// @media screen and (max-width: 480px) {
-//   #app {
-//     padding: 0;
-//   }
-// }

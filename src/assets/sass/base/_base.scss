@@ -20,8 +20,6 @@ html {
   /* calculated into %, so when the user changes their browser's default font-size (which is by default 16px),
     this allows them to resize it also. 10px is 62.5% of 16px. */
   font-size: 62.5%;
-  // font-size: 18pt;
-  // font-size: 1vmax;
   width: 100%;
   height: 100%;
   box-sizing: border-box;
@@ -78,9 +76,6 @@ body {
     background-size: 128px 128px, cover;
   }
 
-  // @include respond(tab-land) {
-  //   min-height: 45rem;
-  // }
   @include respond(phone) {
     height: auto;
     // min-width: 40rem;

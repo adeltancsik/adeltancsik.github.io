@@ -13,7 +13,7 @@
   /* before the animation starts */
   0% {
     opacity: 0;
-    /* moved on the X axis, so horizontally, negative means more to the left */
+    /* moved on the X axis, so horizontally, positive means more to the right */
     transform: translateX(50rem);
   }
 

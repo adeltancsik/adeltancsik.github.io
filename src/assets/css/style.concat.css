@@ -476,7 +476,7 @@
   /* before the animation starts */
   0% {
     opacity: 0;
-    /* moved on the X axis, so horizontally, negative means more to the left */
+    /* moved on the X axis, so horizontally, positive means more to the right */
     transform: translateX(50rem); }
   /* when the animation is finished */
   100% {
@@ -798,7 +798,7 @@ blockquote {
   .fourth__info {
     display: inline-block;
     width: 4rem; }
-    @media only screen and (max-width: 15.625em) {
+    @media only screen and (max-width: 37.5em) {
       .fourth__info {
         display: none; } }
   .fourth__btn-container {
@@ -829,6 +829,7 @@ blockquote {
     align-self: center;
     z-index: 4;
     color: rgba(255, 255, 255, 0.75);
+    backface-visibility: hidden;
     border-bottom: dotted 1px;
     cursor: pointer; }
   .btn:hover {
@@ -871,7 +872,7 @@ blockquote {
   font-size: 1.2rem;
   text-transform: uppercase;
   border: none; }
-  @media only screen and (max-width: 15.625em) {
+  @media only screen and (max-width: 37.5em) {
     .remove-style {
       border: 1px solid rgba(255, 255, 255, 0.2); } }
 
@@ -894,18 +895,15 @@ blockquote {
 .intro__pic {
   width: 100%; }
 
-/* becomes visible and comes in from the right */
 @keyframes moveInLeft_section {
   /* before the animation starts */
   0% {
     opacity: 0;
-    /* moved on the X axis, so horizontally, negative means more to the left */
     transform: translateX(50rem);
     box-shadow: none; }
   /* when the animation is finished */
   100% {
     opacity: 1;
-    /* the way it looks now (already declared) */
     transform: translate(0);
     box-shadow: 0 3rem 5rem 1.2rem rgba(46, 43, 55, 0.575); } }
 
@@ -1240,14 +1238,6 @@ blockquote {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.2);
   transition: all 5000ms ease-in; }
-
-.span-2 {
-  width: 20rem; }
-  .span-2-5 {
-    width: 25rem; }
-
-.span-3 {
-  width: 30rem; }
 
 .span-4 {
   width: 40rem; }

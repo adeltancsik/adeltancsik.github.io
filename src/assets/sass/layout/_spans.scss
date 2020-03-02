@@ -1,4 +1,10 @@
 .span {
+  &-2 {
+    width: 20rem;
+    &-5 {
+      width: 25rem;
+    }
+  }
   &-4 {
     width: 40rem;
     @include respond(phone) {

@@ -1239,6 +1239,11 @@ blockquote {
   transform: translate(-50%, -50%) scale(0.2);
   transition: all 5000ms ease-in; }
 
+.span-2 {
+  width: 20rem; }
+  .span-2-5 {
+    width: 25rem; }
+
 .span-4 {
   width: 40rem; }
   @media only screen and (max-width: 37.5em) {

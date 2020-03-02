@@ -32,7 +32,7 @@ export default class Popup2 extends Component {
               </div>
               <div className="popup__text justifying">
                 The aim is to improve the measurement of JS knowledge level of
-                future students prior to the bootcamp. This
+                future students prior to the bootcamp. This{" "}
                 <strong>full-stack</strong> project is built up of 3 apps, check
                 out the Readme at GitHub for more info.
                 <br />
@@ -44,6 +44,7 @@ export default class Popup2 extends Component {
                 href="https://www.github.com/Official-Codaisseur-Graduate/Dynamic-Student-Assessment-Server"
                 // eslint-disable-next-line
                 target="_blank"
+                className="popup__link"
               >
                 <i className="fourth__icon fab fa-github"></i>
               </a>

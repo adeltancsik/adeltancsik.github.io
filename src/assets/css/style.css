@@ -457,13 +457,13 @@ blockquote {
       position: absolute;
       top: 0.3rem;
       right: 0.3rem; }
-    .popup__content a {
-      border-bottom: none; }
-      .popup__content a i {
-        transform: scale(1.5);
-        margin: 2rem; }
-        .popup__content a i:hover {
-          transform: scale(1.7); }
+  .popup__link {
+    border-bottom: none; }
+    .popup__link i {
+      transform: scale(1.5);
+      margin: 1rem; }
+      .popup__link i:hover {
+        transform: scale(1.7); }
   .popup__pic {
     display: inline-block;
     width: 100%;
@@ -471,11 +471,12 @@ blockquote {
     .popup__pic--container {
       width: 60%;
       height: 100%;
-      float: left;
-      margin-right: 2rem; }
+      float: left; }
   .popup__text {
+    width: 32%;
+    float: right;
     font-size: 1.7rem;
-    margin: 2rem 3rem;
+    margin: 2% 4%;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;

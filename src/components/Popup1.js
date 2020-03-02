@@ -27,10 +27,12 @@ export default class Popup1 extends Component {
                 <img src={quiz} alt="Quiz gif" className="popup__pic" />
               </div>
               <div className="popup__text justifying">
-                A pair-programming project resulting in a
+                A pair-programming project resulting in a{" "}
                 <strong>full-stack</strong> app using Server Sent Events. A
                 registered user can access the game lobby and join a room. The
-                quiz starts when another user has also joined that room.
+                quiz starts when another user has also joined that room. The
+                results and the winner can be checked after both players have
+                finished the quiz.
                 <br />
                 <strong>
                   Main technologies used: <br />
@@ -42,6 +44,7 @@ export default class Popup1 extends Component {
                 href="https://quizam.netlify.com"
                 // eslint-disable-next-line
                 target="_blank"
+                className="popup__link"
               >
                 <i className="fourth__icon fas fa-globe"></i>
               </a>
@@ -49,6 +52,7 @@ export default class Popup1 extends Component {
                 href="https://github.com/mtabanja/week7-game-project-client"
                 // eslint-disable-next-line
                 target="_blank"
+                className="popup__link"
               >
                 <i className="fourth__icon fab fa-github"></i>
               </a>

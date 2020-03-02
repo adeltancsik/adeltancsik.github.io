@@ -37,9 +37,9 @@ export default class Popup3 extends Component {
                 The GitHub repo has to remain private to avoid plagiarism, but I
                 can show it in person.
                 <br />
-                <strong>Main technologies used:</strong>
-                JS(ES6), React.js, Redux, HTML5, CSS3, Bootstrap, NodeJS,
-                PostgreSQL, Express, Sequelize, JWT
+                <strong>Main technologies used:</strong> JS(ES6), React.js,
+                Redux, HTML5, CSS3, Bootstrap, NodeJS, PostgreSQL, Express,
+                Sequelize, JWT
               </div>
             </div>
           </section>

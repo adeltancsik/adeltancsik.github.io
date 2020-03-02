@@ -35,14 +35,16 @@ export default class Popup4 extends Component {
                 challenge was to use at least one technology, that was not
                 taught throughout the Code Academy course, by Codaisseur. The
                 Hackathon's theme was travel, the time limit was 3 days.
-                <br></br>Selftaught technologies used: React Hooks, Moment.js,
-                React-input-moment, React Bootstrap,
+                <br></br>
+                <strong>Selftaught technologies used:</strong> React Hooks,
+                Moment.js, React-input-moment, React Bootstrap,
                 Vertical-timeline-component-for-react
               </div>
               <a
                 href="https://www.github.com/adeltancsik/client-journey-planner"
                 // eslint-disable-next-line
                 target="_blank"
+                className="popup__link"
               >
                 <i className="fourth__icon fab fa-github"></i>
               </a>

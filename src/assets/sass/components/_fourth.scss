@@ -186,6 +186,11 @@
 
   @include respond(phone) {
     border: 1px solid $color-text-lightest;
+    transform: translateY(1rem);
+
+    &:hover {
+      transform: translateY(0.7rem);
+    }
   }
 }
 

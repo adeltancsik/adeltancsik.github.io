@@ -63,4 +63,8 @@
   &__icon {
     font-size: 4rem;
   }
+
+  @include respond(phone) {
+    display: none;
+  }
 }

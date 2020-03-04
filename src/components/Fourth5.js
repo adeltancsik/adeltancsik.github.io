@@ -17,6 +17,14 @@ export default class Fourth5 extends Component {
           >
             <i className="fourth__icon fas fa-globe"></i>
           </a>
+          and Trillo
+          <a
+            href="https://natours-learning-project.netlify.com"
+            // eslint-disable-next-line
+            target="_blank"
+          >
+            <i className="fourth__icon fas fa-globe"></i>
+          </a>
         </h2>
         <div className="fourth">
           <ul className="fourth__list">

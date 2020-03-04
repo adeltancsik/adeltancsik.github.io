@@ -159,3 +159,83 @@
   transform: translate(-50%, -50%) scale(0.2);
   transition: all 5000ms ease-in;
 }
+
+/* CHANGE Natours
+/* enter */
+.changeN-enter {
+  // opacity: 0;
+  transform: translate(-200%, -50%);
+  transition: transform 700ms ease-in-out;
+}
+
+.changeN-enter-active {
+  // opacity: 1;
+
+  transform: translate(-50%, -50%);
+}
+
+.changeN-enter-done {
+  // opacity: 1;
+  transform: translate(-50%, -50%);
+
+  @include respond(tab-land) {
+    transition: none;
+  }
+}
+
+/* exit */
+.changeN-exit {
+  // opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 700ms ease-in-out;
+}
+
+.changeN-exit-active {
+  // opacity: 0;
+  transform: translate(-200%, -50%);
+}
+
+.changeN-exit-done {
+  // opacity: 0;
+  transform: translate(-200%, -50%);
+}
+
+/* CHANGE Trillo
+/* enter */
+.changeT-enter {
+  // opacity: 0;
+  transform: translate(200%, -50%);
+  transition: transform 700ms ease-in-out;
+}
+
+.changeT-enter-active {
+  // opacity: 1;
+
+  transform: translate(-50%, -50%);
+}
+
+.changeT-enter-done {
+  // opacity: 1;
+  transform: translate(-50%, -50%);
+
+  @include respond(tab-land) {
+    transition: none;
+  }
+}
+
+/* exit */
+.changeT-exit {
+  // opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 700ms ease-in-out;
+}
+
+.changeT-exit-active {
+  // opacity: 0;
+  transform: translate(200%, -50%);
+}
+
+.changeT-exit-done {
+  // opacity: 0;
+  transform: translate(200%, -50%);
+}

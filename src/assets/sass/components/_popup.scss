@@ -67,7 +67,8 @@
   }
 
   &__pic {
-    display: inline-block;
+    // if img is inline/inline-block, it has a small space after it at the bottom
+    display: block;
     width: 100%;
     height: 100%;
 

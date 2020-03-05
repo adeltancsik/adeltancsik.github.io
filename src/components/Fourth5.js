@@ -19,7 +19,7 @@ export default class Fourth5 extends Component {
           </a>
           and Trillo
           <a
-            href="https://natours-learning-project.netlify.com"
+            href="https://trillo-learning-project.netlify.com"
             // eslint-disable-next-line
             target="_blank"
           >
@@ -30,7 +30,7 @@ export default class Fourth5 extends Component {
           <ul className="fourth__list">
             <li className="fourth__item">Responsive</li>
             <li className="fourth__item">Animations</li>
-            <li className="fourth__item">SASS</li>
+            <li className="fourth__item">Sass</li>
             <li className="fourth__item">CSS3</li>
             <li className="fourth__item">HTML5</li>
             <li className="fourth__item">jQuery</li>

@@ -479,6 +479,9 @@ blockquote {
       background-color: rgba(0, 0, 0, 0.3); } }
   .popup__right {
     margin: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .popup__right {
+        margin: 1rem 1.5rem; } }
   .popup__titles {
     display: flex;
     justify-content: center;
@@ -521,7 +524,7 @@ blockquote {
         padding: 3%;
         display: flex;
         flex-direction: column; } }
-    @media only screen and (max-width: 15.625em) {
+    @media only screen and (max-width: 18.75em) {
       .popup__content {
         height: 90%;
         overflow-y: scroll; } }

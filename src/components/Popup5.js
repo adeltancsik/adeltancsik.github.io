@@ -186,7 +186,7 @@ export default class Popup5 extends Component {
                         </ul>
                         Check out the{" "}
                         <a
-                          href="https://natours-learning-project.netlify.com"
+                          href="https://trillo-learning-project.netlify.com"
                           // eslint-disable-next-line
                           target="_blank"
                         >
@@ -195,7 +195,7 @@ export default class Popup5 extends Component {
                         !
                       </div>
                       <a
-                        href="https://natours-learning-project.netlify.com"
+                        href="https://trillo-learning-project.netlify.com"
                         // eslint-disable-next-line
                         target="_blank"
                         className="popup__link"

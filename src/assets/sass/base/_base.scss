@@ -24,6 +24,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow: scroll;
 
   // Order matters!
   @include respond(tab-land) {
@@ -49,6 +50,15 @@ html {
     font-size: 75%; // 1rem = 12px, 12/16 = 75%
   }
 }
+
+::-webkit-scrollbar {
+  width: 0px; //remove scrollbar space /
+  height: 0px;
+  background: transparent; // optional: just make scrollbar invisible
+}
+// ::-webkit-scrollbar-thumb {
+//   background: red; // optional: show position indicator in red
+// }
 
 body {
   display: flex;

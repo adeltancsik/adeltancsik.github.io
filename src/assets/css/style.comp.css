@@ -57,7 +57,8 @@ html {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  scroll-behavior: smooth; }
+  scroll-behavior: smooth;
+  overflow: scroll; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -72,6 +73,11 @@ html {
   @media only screen and (min-width: 112.5em) {
     html {
       font-size: 75%; } }
+
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent; }
 
 body {
   display: flex;
@@ -291,6 +297,9 @@ blockquote {
     outline: none; }
   .arrow__icon {
     font-size: 4rem; }
+  @media only screen and (max-width: 37.5em) {
+    .arrow {
+      display: none; } }
 
 #fourth {
   background-image: linear-gradient(45deg, rgba(222, 108, 116, 0.8), #871d2f);
@@ -424,7 +433,10 @@ blockquote {
   border: none; }
   @media only screen and (max-width: 37.5em) {
     .remove-style {
-      border: 1px solid rgba(255, 255, 255, 0.2); } }
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      transform: translateY(1rem); }
+      .remove-style:hover {
+        transform: translateY(0.7rem); } }
 
 #project_title {
   margin-bottom: 3rem; }
@@ -471,59 +483,79 @@ blockquote {
       -webkit-backdrop-filter: blur(10px);
       backdrop-filter: blur(10px);
       background-color: rgba(0, 0, 0, 0.3); } }
+  .popup__right {
+    margin: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .popup__right {
+        margin: 1rem 1.5rem; } }
+  .popup__titles {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    margin: 0 8.5rem;
+    font-size: 2rem; }
+  .popup__title {
+    padding: 0.8rem 1.4rem;
+    align-self: center;
+    background-color: #5a0513;
+    color: inherit;
+    font-family: "Expletus Sans", Helvetica, sans-serif;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    transition: all 0.5s; }
+    .popup__title--selected, .popup__title:focus {
+      outline: none;
+      background-color: inherit;
+      border: 2px solid rgba(255, 255, 255, 0.75); }
   .popup__content {
+    display: flex;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: linear-gradient(45deg, rgba(222, 108, 116, 0.8), #871d2f);
+    background-image: linear-gradient(45deg, #de6c74, #871d2f);
     width: 75%;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
     border-radius: 3px;
     overflow: hidden;
     text-align: center; }
-    .popup__content h1 {
-      display: inline-block;
-      margin-top: 2rem; }
-    .popup__content button {
-      margin: 0.5rem;
-      position: absolute;
-      top: 0.3rem;
-      right: 0.3rem; }
     @media only screen and (max-width: 75em) {
       .popup__content {
         width: 86%;
         height: auto; } }
     @media only screen and (max-width: 37.5em) {
       .popup__content {
-        padding: 4%; } }
+        padding: 3%;
+        display: flex;
+        flex-direction: column; } }
+    @media only screen and (max-width: 18.75em) {
+      .popup__content {
+        height: 90%;
+        overflow-y: scroll; } }
   .popup__link {
     border-bottom: none; }
     .popup__link i {
-      transform: scale(1.5);
-      margin: 1rem; }
+      font-size: 2.5rem;
+      margin-left: 1rem; }
       .popup__link i:hover {
-        transform: scale(1.7); }
+        transform: scale(1.1); }
+  .popup__pic--container {
+    display: flex;
+    align-items: flex-start; }
+    @media only screen and (max-width: 37.5em) {
+      .popup__pic--container {
+        justify-content: center; } }
   .popup__pic {
     display: block;
     width: 100%;
-    height: 100%; }
-    .popup__pic--container {
-      width: 60%;
-      height: 100%;
-      float: left; }
-      @media only screen and (max-width: 37.5em) {
-        .popup__pic--container {
-          width: 70%;
-          float: none;
-          position: relative;
-          margin: 0 auto; } }
+    border: 2px solid rgba(255, 255, 255, 0.4); }
     @media only screen and (max-width: 37.5em) {
       .popup__pic {
-        position: relative; } }
+        width: 60%;
+        align-self: center; } }
   .popup__text {
-    width: 32%;
-    float: right;
     font-size: 1.7rem;
     margin: 2% 4%;
     -moz-hyphens: auto;
@@ -539,6 +571,11 @@ blockquote {
         float: none;
         margin: 3%;
         padding: 0; } }
+  .popup__button {
+    margin: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    right: 0.3rem; }
   @media only screen and (max-width: 75em) {
     .popup {
       transition: none !important; } }
@@ -568,11 +605,6 @@ blockquote {
       font-style: normal;
       font-size: 1.3rem;
       font-weight: 300; }
-  @media only screen and (max-width: 37.5em) {
-    #second {
-      box-shadow: none; }
-      #second .arrow {
-        display: none; } }
 
 #adel-pic {
   object-position: top; }
@@ -788,6 +820,58 @@ blockquote {
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.2);
   transition: all 5000ms ease-in; }
+
+/* CHANGE Natours
+/* enter */
+.changeN-enter {
+  transform: translate(-200%, -50%);
+  transition: transform 700ms ease-in-out; }
+
+.changeN-enter-active {
+  transform: translate(-50%, -50%); }
+
+.changeN-enter-done {
+  transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 75em) {
+    .changeN-enter-done {
+      transition: none; } }
+
+/* exit */
+.changeN-exit {
+  transform: translate(-50%, -50%);
+  transition: transform 700ms ease-in-out; }
+
+.changeN-exit-active {
+  transform: translate(-200%, -50%); }
+
+.changeN-exit-done {
+  transform: translate(-200%, -50%); }
+
+/* CHANGE Trillo
+/* enter */
+.changeT-enter {
+  transform: translate(200%, -50%);
+  transition: transform 700ms ease-in-out; }
+
+.changeT-enter-active {
+  transform: translate(-50%, -50%); }
+
+.changeT-enter-done {
+  transform: translate(-50%, -50%); }
+  @media only screen and (max-width: 75em) {
+    .changeT-enter-done {
+      transition: none; } }
+
+/* exit */
+.changeT-exit {
+  transform: translate(-50%, -50%);
+  transition: transform 700ms ease-in-out; }
+
+.changeT-exit-active {
+  transform: translate(200%, -50%); }
+
+.changeT-exit-done {
+  transform: translate(200%, -50%); }
 
 .span-2 {
   width: 20rem; }

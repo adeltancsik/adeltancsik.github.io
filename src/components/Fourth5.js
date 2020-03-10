@@ -17,9 +17,17 @@ export default class Fourth5 extends Component {
           >
             <i className="fourth__icon fas fa-globe"></i>
           </a>
-          and Trillo
+          , Trillo
           <a
             href="https://trillo-learning-project.netlify.com"
+            // eslint-disable-next-line
+            target="_blank"
+          >
+            <i className="fourth__icon fas fa-globe"></i>
+          </a>
+          and Nexter
+          <a
+            href="https://nexter-learning-project.netlify.com"
             // eslint-disable-next-line
             target="_blank"
           >
@@ -30,14 +38,13 @@ export default class Fourth5 extends Component {
           <ul className="fourth__list">
             <li className="fourth__item">Responsive</li>
             <li className="fourth__item">Animations</li>
+            <li className="fourth__item">Flexbox</li>
+            <li className="fourth__item">Grid</li>
             <li className="fourth__item">Sass</li>
             <li className="fourth__item">CSS3</li>
             <li className="fourth__item">HTML5</li>
             <li className="fourth__item">jQuery</li>
           </ul>
-          <p className="fourth__text">
-            &sdot;&sdot;&sdot;Under development&sdot;&sdot;&sdot;
-          </p>
         </div>
         <div className="fourth__btn-container">
           <button

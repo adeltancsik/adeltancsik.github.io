@@ -204,7 +204,7 @@
 /* enter */
 .changeT-enter {
   // opacity: 0;
-  transform: translate(200%, -50%);
+  transform: translate(-50%, -250%);
   transition: transform 700ms ease-in-out;
 }
 
@@ -232,10 +232,50 @@
 
 .changeT-exit-active {
   // opacity: 0;
-  transform: translate(200%, -50%);
+  transform: translate(-50%, -250%);
 }
 
 .changeT-exit-done {
+  // opacity: 0;
+  transform: translate(-50%, -250%);
+}
+
+/* CHANGE Nexter
+/* enter */
+.changeNe-enter {
+  // opacity: 0;
+  transform: translate(200%, -50%);
+  transition: transform 700ms ease-in-out;
+}
+
+.changeNe-enter-active {
+  // opacity: 1;
+
+  transform: translate(-50%, -50%);
+}
+
+.changeNe-enter-done {
+  // opacity: 1;
+  transform: translate(-50%, -50%);
+
+  @include respond(tab-land) {
+    transition: none;
+  }
+}
+
+/* exit */
+.changeNe-exit {
+  // opacity: 1;
+  transform: translate(-50%, -50%);
+  transition: transform 700ms ease-in-out;
+}
+
+.changeNe-exit-active {
+  // opacity: 0;
+  transform: translate(200%, -50%);
+}
+
+.changeNe-exit-done {
   // opacity: 0;
   transform: translate(200%, -50%);
 }

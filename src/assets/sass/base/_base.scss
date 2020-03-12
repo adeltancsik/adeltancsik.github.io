@@ -24,7 +24,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  overflow: scroll;
+  // overflow: scroll;
 
   // Order matters!
   @include respond(tab-land) {
@@ -50,15 +50,6 @@ html {
     font-size: 75%; // 1rem = 12px, 12/16 = 75%
   }
 }
-
-::-webkit-scrollbar {
-  width: 0px; //remove scrollbar space /
-  height: 0px;
-  background: transparent; // optional: just make scrollbar invisible
-}
-// ::-webkit-scrollbar-thumb {
-//   background: red; // optional: show position indicator in red
-// }
 
 body {
   display: flex;
@@ -99,3 +90,34 @@ body {
   background-color: $color-pink;
   color: $color-white;
 }
+
+// setting custom scrollbar
+html {
+  --scrollbarBG: whitesmoke;
+  --thumbBG: #de6c74;
+}
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+body {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+// if I want to hide the scrollbar: + uncomment html overflow:scroll
+// ::-webkit-scrollbar {
+//   width: 0px; //remove scrollbar space /
+//   height: 0px;
+//   background: transparent; // optional: just make scrollbar invisible
+// }
+// ::-webkit-scrollbar-thumb {
+//   background: red; // optional: show position indicator in red
+// }

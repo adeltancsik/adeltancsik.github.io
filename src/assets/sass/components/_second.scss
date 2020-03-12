@@ -30,6 +30,9 @@
       font-weight: 300;
     }
   }
+  @include respond(phone) {
+    box-shadow: none;
+  }
 }
 
 #adel-pic {

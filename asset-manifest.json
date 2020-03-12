@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.5efcd90b.chunk.css",
+    "main.css": "/static/css/main.4be249c2.chunk.css",
     "main.js": "/static/js/main.0e03280c.chunk.js",
     "main.js.map": "/static/js/main.0e03280c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c50432e1.js",
@@ -18,9 +18,9 @@
     "static/js/7.672f281c.chunk.js": "/static/js/7.672f281c.chunk.js",
     "static/js/7.672f281c.chunk.js.map": "/static/js/7.672f281c.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.cdcbba098fa4646b6207a76ba6ddcdfa.js": "/precache-manifest.cdcbba098fa4646b6207a76ba6ddcdfa.js",
+    "precache-manifest.9ed8f11dd25049d77787643f4c17b8d7.js": "/precache-manifest.9ed8f11dd25049d77787643f4c17b8d7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.5efcd90b.chunk.css.map": "/static/css/main.5efcd90b.chunk.css.map",
+    "static/css/main.4be249c2.chunk.css.map": "/static/css/main.4be249c2.chunk.css.map",
     "static/js/2.69f5f253.chunk.js.LICENSE.txt": "/static/js/2.69f5f253.chunk.js.LICENSE.txt",
     "static/media/Adel.jpg": "/static/media/Adel.c0e145e6.jpg",
     "static/media/Adél Tancsik CV.pdf": "/static/media/Adél Tancsik CV.9462a5db.pdf",
@@ -38,7 +38,7 @@
   "entrypoints": [
     "static/js/runtime-main.c50432e1.js",
     "static/js/2.69f5f253.chunk.js",
-    "static/css/main.5efcd90b.chunk.css",
+    "static/css/main.4be249c2.chunk.css",
     "static/js/main.0e03280c.chunk.js"
   ]
 }

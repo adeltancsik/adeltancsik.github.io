@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "838dcb9e5bc7230898823cbdf6bfa030",
+    "revision": "2262d9be7bcb3dd94d509bd272f8bd13",
     "url": "/index.html"
   },
   {
-    "revision": "6b45835fcb5180841df8",
-    "url": "/static/css/main.4be249c2.chunk.css"
+    "revision": "342a10754eb00d196909",
+    "url": "/static/css/main.2bd73f7e.chunk.css"
   },
   {
     "revision": "9434528e42e577a1c3af",
@@ -36,8 +36,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/7.672f281c.chunk.js"
   },
   {
-    "revision": "6b45835fcb5180841df8",
-    "url": "/static/js/main.0e03280c.chunk.js"
+    "revision": "342a10754eb00d196909",
+    "url": "/static/js/main.5e2b24f1.chunk.js"
   },
   {
     "revision": "5a574e4f657975fc0907",
@@ -48,8 +48,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/Adel.c0e145e6.jpg"
   },
   {
-    "revision": "9462a5db3a278a4278998afc4b9dfe99",
-    "url": "/static/media/Adél Tancsik CV.9462a5db.pdf"
+    "revision": "c7ddc00c5a68fcd1952dd7675d9992e2",
+    "url": "/static/media/Adél Tancsik CV.c7ddc00c.pdf"
   },
   {
     "revision": "ef8c0f2d56499512f1ff1055691a6b16",

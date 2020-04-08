@@ -7,7 +7,7 @@ export default class Second extends Component {
       document.querySelector("#third").scrollIntoView({
         behavior: "smooth",
         block: "center",
-        inline: "center"
+        inline: "center",
       });
     };
     return (
@@ -28,12 +28,8 @@ export default class Second extends Component {
               at the end of last year after a period of autodidactism.
               <br />
               An adventure in which I found my passion for coding.
-              <br />
-              A path that fills me up with excitement and curiosity for where it
-              will take me next.
-              <br />
-              Currently, I'm at the milestone of looking for my first job as a
-              Full-stack Web Developer in the Netherlands.
+              <br />A path that fills me up with excitement and led to my first
+              job as a Web Developer at SD-Insights.
             </p>
           </div>
 
